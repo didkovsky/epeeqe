@@ -1,0 +1,124 @@
+a{
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+select {
+
+	&:active {
+		outline:none;
+	}
+
+	&:focus {
+		outline:none;
+	}
+}
+
+.form-control {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+	-moz-box-shadow: none;
+	
+	&:focus {
+		border-color: @brand-secondary;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+		-o-box-shadow: none;
+		-moz-box-shadow: none;
+	}
+}
+
+.form-control-feedback {
+	line-height: 40px;
+}
+
+.dropdown-toggle {
+	.form-control-feedback {
+		display: none;
+	}
+}
+
+.dropdown-header {
+	background: @gray-lighter;
+	padding: 8px;
+	padding-left: 2.25em;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-size: @font-size-base;
+	color: @text-color;
+}
+
+.dropdown-menu.inner {
+
+	.divider {
+		display: none;
+	}
+}
+
+.btn-default:active:hover, 
+.btn-default.active:hover, 
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus, 
+.btn-default.active:focus, 
+.open > .dropdown-toggle.btn-default:focus, 
+.btn-default:active.focus, 
+.btn-default.active.focus, 
+.open > .dropdown-toggle.btn-default.focus {
+		box-shadow: none!important;
+		-webkit-box-shadow: none!important;
+		-o-box-shadow: none!important;
+		-moz-box-shadow: none!important;
+		outline:none;
+		background: @white;
+}
+
+.bootstrap-select .dropdown-toggle:focus {
+	outline: none!important;
+}
+
+a:focus {
+	outline: none!important;
+}
+
+.btn-secondary {
+	background-color: @brand-secondary;
+	color: @white;
+
+	&:hover {
+		background-color:darken(@brand-secondary, 5%);
+		color: @white;
+	}
+}
+
+.def-footer {
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+
+	a {
+		color: @gray-light;
+		padding: 12px;
+		&:hover {
+			color: darken(@gray-light, 15%);
+			background: none!important;
+		}
+	}
+}
+
+.m-footer {
+	padding-top: 40px;
+	a {
+		color: @gray-light;
+		padding: 12px;
+		&:hover {
+			color: darken(@gray-light, 15%);
+			background: none!important;
+		}
+	}
+
+	hr {
+		margin: 10px 0;
+	}
+}
