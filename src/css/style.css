@@ -5918,3 +5918,19 @@ button.close {
     display: none !important;
   }
 }
+.form-control {
+  box-shadow: none;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #FB2775;
+}
+.well {
+  box-shadow: none;
+}
+.btn:active {
+  box-shadow: none;
+}
+.btn-group.open .dropdown-toggle {
+  box-shadow: none;
+}
