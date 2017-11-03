@@ -8613,7 +8613,70 @@ button.close {
   background-color: #fff;
   border-radius: 0;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+.navbar-ep .menu-button,
+.navbar-ep .add-button {
+  margin: 24px 8px 0 8px;
+  display: inline-block;
+  font-size: 24px;
+}
+.navbar-ep .menu-button:hover,
+.navbar-ep .add-button:hover {
+  text-decoration: none;
+}
+.navbar-ep .add-button {
+  color: #FB2775;
+}
+.navbar-ep .menu-button {
+  color: #8E36AB;
+}
+.navbar-ep .logo {
+  margin: 24px 8px 0 8px;
+  display: inline-block;
 }
 .navbar-ep .logo img {
-  width: 128px;
+  width: 160px;
+}
+.navbar-ep .search-group {
+  border-bottom: #bababa 1px solid;
+  margin-top: 24px;
+}
+.navbar-ep .search-group .form-control {
+  border-radius: 0;
+  border: none;
+  height: 30px;
+}
+.navbar-ep .search-group .input-group-addon {
+  border: none;
+  font-size: 24px;
+  background: none;
+  height: 30px;
+  padding: 0!important;
+}
+.navbar-ep .search-group .input-group-addon i::before {
+  line-height: 30px;
+  color: #bababa;
+}
+.navbar-ep .nav-filter {
+  border: none!important;
+  margin: auto;
+}
+.navbar-ep .nav-filter a {
+  color: #000;
+  font-weight: 600;
+}
+.navbar-ep .nav-filter a.active::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  border-radius: 2px;
+  background: #FB2775;
+  left: 50%;
+  margin-left: -10px;
+}
+.navbar-ep .nav-justified > li > a {
+  border: none !important;
 }

@@ -4,11 +4,89 @@
 	background-color:  @white;
 	border-radius: 0;
 	box-shadow: 0 3px 5px rgba(0,0,0,.15);
+	border: none;
+
+	.menu-button, .add-button {
+		margin: 24px 8px 0 8px;
+		display:  inline-block;
+		font-size: 24px;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.add-button {
+		color: @brand-primary;
+	}
+
+	.menu-button {
+		color: @brand-secondary;
+	}
 
 	.logo {
 
+		margin: 24px 8px 0 8px;
+		display:  inline-block;
+
 		img {
-			width: 128px;
+			width: 160px;
 		}
+	}
+
+	.search-group {
+
+		border-bottom: #bababa 1px solid;
+		margin-top: 24px;
+
+		.form-control {
+
+			border-radius: 0;
+			border:  none;
+			height: 30px;
+		}
+		
+		.input-group-addon {
+
+			border: none;
+			font-size: 24px;
+			background: none;
+			height: 30px;
+			padding: 0!important;
+
+			i::before {
+				line-height: 30px;
+				color: #bababa;
+			}
+		}
+		
+	}
+
+	.nav-filter {
+		
+		border:  none!important;
+		margin:  auto;
+
+		a {
+			color: @gray-base;
+			font-weight:  600;
+
+			&.active::after {
+				
+				content:  " ";
+				display:  block;
+				position: absolute;
+				width: 20px;
+				height: 4px;
+				border-radius: 2px;
+				background: @brand-primary;
+				left: 50%;
+				margin-left: -10px;
+			}
+		}
+	}
+
+	.nav-justified>li>a {
+		border:  none!important
 	}
 }
