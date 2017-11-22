@@ -36,7 +36,7 @@ gulp.task('browser-reload', function() {
         server: {
             baseDir: 'src'
         },
-       // notify: false
+        notify: false
     });
 });
 
