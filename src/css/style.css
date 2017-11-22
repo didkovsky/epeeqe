@@ -5941,6 +5941,11 @@ button.close {
   font-weight: normal;
   font-style: normal;
 }
+[class^="icon-"],
+[class*=" icon-"] {
+  line-height: 24px!important;
+  height: 24px;
+}
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   font-family: "EIcons";
@@ -5950,19 +5955,12 @@ button.close {
   font-size: 24px;
   display: inline-block;
   text-decoration: none;
-  width: 1em;
   text-align: center;
-  /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
   /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
+  line-height: 24px;
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -6132,15 +6130,26 @@ button.close {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
   border: none;
 }
-.navbar-ep .menu-button,
-.navbar-ep .add-button {
-  margin: 24px 8px 0 8px;
-  display: inline-block;
-  font-size: 24px;
+.navbar-ep .nav-group {
+  padding: 8px;
 }
-.navbar-ep .menu-button:hover,
-.navbar-ep .add-button:hover {
+.navbar-ep .nav-group:after {
+  content: ' ';
+  display: block;
+  height: 0;
+  width: 0;
+  clear: both;
+}
+.navbar-ep .nav-el {
+  display: block;
+  position: relative;
+  height: 30px;
+  float: left;
   text-decoration: none;
+  margin: 16px;
+}
+.navbar-ep .navbar-right .nav-el {
+  float: right;
 }
 .navbar-ep .add-button {
   color: #FB2775;
@@ -6148,12 +6157,13 @@ button.close {
 .navbar-ep .menu-button {
   color: #8E36AB;
 }
-.navbar-ep .logo {
-  margin: 24px 8px 0 8px;
-  display: inline-block;
-}
 .navbar-ep .logo img {
-  width: 160px;
+  height: 30px;
+  width: auto;
+}
+.navbar-ep .logo.logo-xs img {
+  height: 24px;
+  width: auto;
 }
 .navbar-ep .search-group {
   border-bottom: #bababa 1px solid;
@@ -6175,12 +6185,20 @@ button.close {
   font-size: 16px;
   color: #bababa;
 }
-.navbar-ep .alert-pic {
-  margin: 24px 8px 0 8px;
-  display: inline-block;
+.navbar-ep .search-pic {
   font-size: 24px;
   line-height: 24px;
-  position: relative;
+}
+.navbar-ep .search-pic:hover {
+  border: none;
+  text-decoration: none;
+}
+.navbar-ep .search-pic i:before {
+  color: #bababa;
+}
+.navbar-ep .alert-pic {
+  font-size: 24px;
+  line-height: 24px;
 }
 .navbar-ep .alert-pic:hover {
   border: none;
@@ -6202,17 +6220,10 @@ button.close {
   background-color: #FB2775;
   border: #fff 2px solid;
 }
-.navbar-ep .user-pic {
-  margin: 20px 8px 0 8px;
-  display: inline-block;
-  font-size: 24px;
-  line-height: 24px;
-}
 .navbar-ep .user-pic img {
   width: 24px;
   height: 24px;
   border-radius: 12px;
-  margin-top: -6px;
 }
 .navbar-ep .nav-filter {
   border: none!important;
@@ -6233,6 +6244,20 @@ button.close {
   left: 50%;
   margin-left: -10px;
 }
+.navbar-ep .nav-justified > li {
+  display: table-cell !important;
+  width: 1%;
+}
 .navbar-ep .nav-justified > li > a {
-  border: none !important;
+  border: none!important;
+  margin: 0!important;
+}
+.navbar-ep .nav-tabs.nav-justified > li > a {
+  margin: 0!important;
+}
+@media (max-width: 768px) {
+  .navbar-ep .nav-el {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
 }
