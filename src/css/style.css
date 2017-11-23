@@ -5934,6 +5934,14 @@ button.close {
 .btn-group.open .dropdown-toggle {
   box-shadow: none;
 }
+.btn-secondary {
+  background-color: #8E36AB;
+  color: #fff;
+}
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #6e2a84;
+}
 @font-face {
   font-family: 'EIcons';
   src: url('../fonts/ei/ei.eot?98204156');
@@ -6149,6 +6157,20 @@ button.close {
   margin: 16px;
   margin-bottom: 0;
 }
+.navbar-ep .nav-el span {
+  color: #ABABAB;
+  line-height: 30px;
+  padding: 4px;
+}
+.navbar-ep .nav-el i:before {
+  color: #bababa;
+}
+.navbar-ep .nav-el .label-default {
+  background: #bababa;
+  color: #151515;
+  font-size: 15px;
+  padding: 4px;
+}
 .navbar-ep .navbar-right .nav-el {
   float: right;
 }
@@ -6244,6 +6266,9 @@ button.close {
   background: #FB2775;
   left: 50%;
   margin-left: -10px;
+}
+.navbar-ep .btn-sign {
+  margin-left: 0;
 }
 .navbar-ep .nav-justified > li {
   display: table-cell !important;
