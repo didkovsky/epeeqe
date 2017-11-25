@@ -5953,6 +5953,9 @@ button.close {
 [class*=" icon-"] {
   line-height: 24px!important;
   height: 24px;
+  display: inline-block;
+  position: relative;
+  top: 3px;
 }
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
@@ -6137,9 +6140,11 @@ button.close {
   border-radius: 0;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
   border: none;
+  padding-top: 12px;
 }
 .navbar-ep .nav-group {
   padding: 8px;
+  display: inline-block;
 }
 .navbar-ep .nav-group:after {
   content: ' ';
@@ -6148,41 +6153,52 @@ button.close {
   width: 0;
   clear: both;
 }
+.navbar-ep .nav-group.nav-group-justified {
+  margin: auto;
+}
 .navbar-ep .nav-el {
   display: block;
   position: relative;
   height: 30px;
   float: left;
   text-decoration: none;
-  margin: 16px;
-  margin-bottom: 0;
+  margin: 0 12px;
 }
 .navbar-ep .nav-el span {
-  color: #ABABAB;
+  color: #151515;
   line-height: 30px;
   padding: 4px;
+  font-weight: 400;
 }
 .navbar-ep .nav-el i:before {
   color: #bababa;
 }
-.navbar-ep .nav-el .label-default {
-  background: #bababa;
-  color: #151515;
-  font-size: 15px;
-  padding: 4px;
+.navbar-ep .bages-cat .label-default {
+  background-color: #efefef;
+  color: #ABABAB;
+  font-size: 14px;
+  padding: 6px;
+  position: relative;
+  top: 2px;
 }
-.navbar-ep .navbar-right .nav-el {
-  float: right;
+.navbar-ep .navbar-right {
+  text-align: right;
 }
-.navbar-ep .add-button {
-  color: #FB2775;
+.navbar-ep .add-button i:before {
+  color: #FB2775 !important;
 }
-.navbar-ep .menu-button {
-  color: #8E36AB;
+.navbar-ep .menu-button i:before {
+  color: #8E36AB !important;
+}
+.navbar-ep .logo {
+  margin-top: 4px;
 }
 .navbar-ep .logo img {
   height: 30px;
   width: auto;
+}
+.navbar-ep .logo.logo-xs {
+  margin-top: 4px;
 }
 .navbar-ep .logo.logo-xs img {
   height: 24px;
@@ -6190,7 +6206,6 @@ button.close {
 }
 .navbar-ep .search-group {
   border-bottom: #bababa 1px solid;
-  margin-top: 24px;
 }
 .navbar-ep .search-group .form-control {
   border-radius: 0;
@@ -6207,6 +6222,9 @@ button.close {
   line-height: 30px;
   font-size: 16px;
   color: #bababa;
+}
+.navbar-ep .search-group .input-group-addon i {
+  top: 0;
 }
 .navbar-ep .search-pic {
   font-size: 24px;
@@ -6248,6 +6266,11 @@ button.close {
   height: 24px;
   border-radius: 12px;
 }
+.navbar-ep .user-pic span {
+  color: #bababa;
+  margin-left: 8px;
+  top: 2px;
+}
 .navbar-ep .nav-filter {
   border: none!important;
   margin: auto;
@@ -6277,6 +6300,7 @@ button.close {
 .navbar-ep .nav-justified > li > a {
   border: none!important;
   margin: 0!important;
+  border-radius: 0!important;
 }
 .navbar-ep .nav-tabs.nav-justified > li > a {
   margin: 0!important;
