@@ -25,7 +25,8 @@ gulp.task('css-min', ['less'], function() {
 gulp.task('js-compile', function() {
 	return gulp.src(['src/bower_components/jquery/dist/jquery.min.js',
 		'src/bower_components/bootstrap/dist/js/bootstrap.min.js',
-		'src/scripts/*.js'])
+		'src/scripts/*.js',
+		'src/scripts/**/*.js'])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('src/js'));
@@ -47,7 +48,7 @@ gulp.task('clean', function() {
 gulp.task('watch', ['browser-reload', 'css-min', 'js-compile'], function() {
 	gulp.watch('src/less/**/*.less', ['css-min']);
 	gulp.watch('src/*.html', ['browser-reload']);
-	gulp.watch('src/scripts/*.js', ['js-compile', 'browser-reload']);
+	gulp.watch('src/scripts/**/*.js', ['js-compile', 'browser-reload']);
 });
 
 gulp.task('build', ['clean', 'css-min', 'js-compile'], function() {
