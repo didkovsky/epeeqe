@@ -37,13 +37,6 @@
 		text-decoration: none;
 		margin: 0 12px;
 
-		span {
-			color: @gray-dark;
-			line-height: 30px;
-			padding: 4px;
-			font-weight: 600;
-		}
-
 		i:before {
 			color: #bababa;
 		}
@@ -70,10 +63,76 @@
 				background-color: @brand-secondary;
 			}
 		}
+	}
 
-		.dropdown-menu {
-			left: -130px;
-			top: 36px;
+	.dropdown-menu {
+		width: 220px;
+		left: -190px;
+		top: 36px;
+
+		.d-m-line {
+			&.border-bottom {
+				border-bottom: @gray-lighter 1px solid;
+			}
+
+			.icon {
+				float: left;
+				width: 36px;
+
+				&::after {
+					content: ' ';
+					display: block;
+					width: 0;
+					height: 0;
+					clear: both;
+				}
+
+				img {
+					width: 24px;
+					height: 24px;
+					margin-top: 3px;
+					margin-left: 3px;
+					border-radius: 12px;
+
+					&.lg {
+						width: 30px;
+						height: 30px;
+						border-radius: 15px;
+						margin-left: 0;
+					}
+				}
+
+				i {
+					width: 24px;
+					height: 30px;
+					margin-left: 3px;
+				}
+			}
+
+			.content {
+				float: left;
+				width: ~"calc(100% - 36px)";
+				padding-top: 3px;
+				padding-left: 8px;
+				//font-size: 13px;
+
+				&.in-line {
+					line-height: 30px;
+					//font-weight: 600;
+					font-size: 14px;
+					padding-top: 0;
+				}
+
+				.strong	{
+					font-weight: 600;
+				}
+
+				.annotation {
+					color: @gray;
+					margin-bottom: 0;
+					font-weight: 500;
+				}
+			}
 		}
 	}
 
@@ -120,7 +179,6 @@
 
 	.search-group {
 		border-bottom: #bababa 1px solid;
-		//margin-top: 4px;
 
 		.form-control {
 			border-radius: 0;
@@ -218,12 +276,6 @@
 			height: 24px;
 			border-radius: 12px;
 		}
-
-		span {
-			color: #bababa;
-			margin-left: 8px;
-			top: 2px;
-		}
 	}
 
 	.nav-filter {
@@ -250,26 +302,6 @@
 
 	.btn-sign {
 		margin-left: 0;
-	}
-
-	.nav-dropdown {
-		a {
-			line-height: 40px;
-			font-weight: 600;
-
-			&:after {
-				content: ' ';
-				display: block;
-				position: relative;
-				width: 0;
-				height: 0;
-				clear: both;
-			}
-		}
-
-		.nav-el {
-			margin-right: 24px;
-		}
 	}
 
 	.nav-justified>li {

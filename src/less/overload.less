@@ -42,7 +42,7 @@
 .dropdown-menu {
 	border: none;
 	padding: 0;
-	box-shadow: 0 0px 12px rgba(0,0,0,.175);
+	box-shadow: 0px 0px 20px rgba(0,0,0,.175);
 
 	&.arrow-top {
 		&:after {
@@ -53,9 +53,9 @@
 	    left: 50%;
 	    margin-left: -8px;
 			position: absolute;
-			border-left: 6px solid transparent;
-      border-right: 6px solid transparent;
-      border-bottom: 6px solid white;
+			border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid white;
 		}
 	}
 
@@ -77,8 +77,23 @@
 		margin: 0;
 	}
 
-	a {
-		padding: 8px 16px;
-		min-height: 48px;
+	li {
+		a {
+			padding: 8px 16px;
+			min-height: 48px;
+			overflow: hidden;
+
+			&.sm	{
+				min-height: 0;
+			}
+		}
+
+		a.btn {
+			margin: 8px 16px;
+			padding: 8px;
+			color: @white;
+			min-height: 0;
+			font-weight: 600;
+		}
 	}
 }
