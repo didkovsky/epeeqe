@@ -1,5 +1,4 @@
 .navbar-ep {
-
 	width: 100%;
 	background-color:  @white;
 	border-radius: 0;
@@ -8,11 +7,9 @@
 	padding-top: 12px;
 
 	.nav-group {
-
 		padding: 8px;
 		display: inline-block;
 		width: 100%;
-
 
 		&:after {
 			content: ' ';
@@ -26,7 +23,6 @@
 			margin: auto;
 			width: auto;
 		}
-
 	}
 
 	.nav-group-justified-conteiner {
@@ -34,7 +30,6 @@
 	}
 
 	.nav-el {
-
 		display: block;
 		position: relative;
 		height: 30px;
@@ -58,17 +53,16 @@
 		}
 
 		.badge {
-
 			position: absolute;
-		    top: 0;
-		    left: 100%;
-		    margin-left: -10px;
-		    margin-top: -4px;
-		    min-width: 21px;
-		    height: 21px;
-		    font-size: 10px;
-		    line-height: 15px;
-		    padding: 1px 3px;
+	    top: 0;
+	    left: 100%;
+	    margin-left: -10px;
+	    margin-top: -4px;
+	    min-width: 21px;
+	    height: 21px;
+	    font-size: 10px;
+	    line-height: 15px;
+	    padding: 1px 3px;
 			background-color: @brand-primary;
 			border:  @white 2px solid;
 
@@ -76,12 +70,15 @@
 				background-color: @brand-secondary;
 			}
 		}
+
+		.dropdown-menu {
+			left: -130px;
+			top: 36px;
+		}
 	}
 
 	.bages-cat {
-
 		.label-default {
-
 			background-color: #efefef;
 			color: @gray;
 			font-size:  14px;
@@ -104,7 +101,6 @@
 	}
 
 	.logo {
-
 		margin-top: 4px;
 
 		img {
@@ -113,7 +109,6 @@
 		}
 
 		&.logo-xs {
-
 			margin-top: 4px;
 
 			img {
@@ -124,19 +119,16 @@
 	}
 
 	.search-group {
-
 		border-bottom: #bababa 1px solid;
 		//margin-top: 4px;
 
 		.form-control {
-
 			border-radius: 0;
 			border:  none;
 			height: 30px;
 		}
 
 		.input-group-addon {
-
 			border: none;
 			background: none;
 			height: 30px;
@@ -152,7 +144,6 @@
 				top: 0;
 			}
 		}
-
 	}
 
 	.mobile-search-form {
@@ -178,11 +169,8 @@
 	}
 
 	.search-pic {
-
 		font-size: 24px;
 		line-height: 24px;
-
-
 
 		&:hover {
 			border: none;
@@ -208,11 +196,9 @@
 		           transition: left .3s cubic-bezier(0, 0, 0.03, 0.98);
 		         //  transition-delay: 0.25s;
 		}
-
 	}
 
 	.alert-pic {
-
 		font-size: 24px;
 		line-height: 24px;
 
@@ -227,7 +213,6 @@
 	}
 
 	.user-pic {
-
 		img {
 			width: 24px;
 			height: 24px;
@@ -242,7 +227,6 @@
 	}
 
 	.nav-filter {
-
 		border:  none!important;
 		margin:  auto;
 
@@ -251,7 +235,6 @@
 			font-weight:  600;
 
 			&.active::after {
-
 				content:  " ";
 				display:  block;
 				position: absolute;
@@ -270,7 +253,6 @@
 	}
 
 	.nav-dropdown {
-
 		a {
 			line-height: 40px;
 			font-weight: 600;
@@ -288,7 +270,6 @@
 		.nav-el {
 			margin-right: 24px;
 		}
-
 	}
 
 	.nav-justified>li {
@@ -310,9 +291,7 @@
 @media (max-width: @screen-sm) {
 
 	.navbar-ep {
-
 		.nav-el {
-
 			margin-left: 6px;
 			margin-right: 6px;
 		}
@@ -329,11 +308,8 @@
 
 @media (max-width: 1212px) {
 	.navbar-ep {
-
 		.bages-cat {
-
 			display: none;
 		}
-
 	}
 }

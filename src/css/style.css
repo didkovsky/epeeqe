@@ -5947,6 +5947,26 @@ button.close {
   padding: 0;
   box-shadow: 0 0px 12px rgba(0, 0, 0, 0.175);
 }
+.dropdown-menu.arrow-top:after {
+  width: 16px;
+  height: 16px;
+  content: " ";
+  top: -16px;
+  left: 50%;
+  margin-left: -8px;
+  position: absolute;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid white;
+}
+.dropdown-menu.arrow-left:after {
+  left: 0;
+  margin-left: 12px;
+}
+.dropdown-menu.arrow-right:after {
+  left: 100%;
+  margin-left: -28px;
+}
 .dropdown-menu .divider {
   margin: 0;
 }
@@ -6209,6 +6229,10 @@ button.close {
 }
 .navbar-ep .nav-el .badge.badge-secondary {
   background-color: #8E36AB;
+}
+.navbar-ep .nav-el .dropdown-menu {
+  left: -130px;
+  top: 36px;
 }
 .navbar-ep .bages-cat .label-default {
   background-color: #efefef;
