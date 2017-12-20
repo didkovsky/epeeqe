@@ -5942,6 +5942,14 @@ button.close {
   color: #fff;
   background-color: #6e2a84;
 }
+.badge.badge-secondary {
+  background-color: #8E36AB;
+  color: #fff;
+}
+.badge.badge-primary {
+  background-color: #FB2775;
+  color: #fff;
+}
 .dropdown-menu {
   border: none;
   padding: 0;
@@ -6221,7 +6229,7 @@ button.close {
 .navbar-ep .nav-el.nav-el-right {
   float: right;
 }
-.navbar-ep .nav-el .badge {
+.navbar-ep .nav-el .badge-nav {
   position: absolute;
   top: 0;
   left: 100%;
@@ -6232,11 +6240,7 @@ button.close {
   font-size: 10px;
   line-height: 15px;
   padding: 1px 3px;
-  background-color: #FB2775;
   border: #fff 2px solid;
-}
-.navbar-ep .nav-el .badge.badge-secondary {
-  background-color: #8E36AB;
 }
 .navbar-ep .dropdown-menu {
   width: 220px;
@@ -6249,6 +6253,7 @@ button.close {
 .navbar-ep .dropdown-menu .d-m-line .icon {
   float: left;
   width: 36px;
+  position: relative;
 }
 .navbar-ep .dropdown-menu .d-m-line .icon::after {
   content: ' ';
@@ -6280,11 +6285,15 @@ button.close {
   width: calc(100% - 36px);
   padding-top: 3px;
   padding-left: 8px;
+  position: relative;
 }
 .navbar-ep .dropdown-menu .d-m-line .content.in-line {
   line-height: 30px;
   font-size: 14px;
   padding-top: 0;
+}
+.navbar-ep .dropdown-menu .d-m-line .content.in-line .badge {
+  margin-top: 6px;
 }
 .navbar-ep .dropdown-menu .d-m-line .content .strong {
   font-weight: 600;
