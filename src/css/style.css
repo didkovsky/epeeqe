@@ -5985,6 +5985,9 @@ button.close {
   min-height: 0;
   font-weight: 600;
 }
+.dropdown-menu li a.btn:hover {
+  color: #FB2775;
+}
 @font-face {
   font-family: 'EIcons';
   src: url('../fonts/ei/ei.eot?98204156');
