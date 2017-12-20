@@ -5952,7 +5952,7 @@ button.close {
 }
 .dropdown-menu {
   border: none;
-  padding: 0;
+  padding: 8px 0;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.175);
 }
 .dropdown-menu.arrow-top:after {
