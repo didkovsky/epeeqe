@@ -6222,6 +6222,11 @@ button.close {
   float: left;
   text-decoration: none;
   margin: 0 12px;
+  color: #bababa;
+}
+.navbar-ep .nav-el.btn-primary,
+.navbar-ep .nav-el.btn-secondary {
+  color: #fff !important;
 }
 .navbar-ep .nav-el i:before {
   color: #bababa;
