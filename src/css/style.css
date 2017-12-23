@@ -5955,6 +5955,9 @@ button.close {
   padding: 8px 0;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.175);
 }
+.dropdown-menu a.gray-bg {
+  background-color: #f9f9f9;
+}
 .dropdown-menu.arrow-top:after {
   width: 16px;
   height: 16px;
@@ -6224,6 +6227,18 @@ button.close {
   margin: 0 12px;
   color: #bababa;
 }
+.navbar-ep .nav-el .text-line {
+  line-height: 30px;
+}
+.navbar-ep .nav-el .text-line.text-line-ml {
+  margin-left: 8px;
+}
+.navbar-ep .nav-el img {
+  width: 24px;
+  height: 24px;
+  margin-top: 3px;
+  border-radius: 12px;
+}
 .navbar-ep .nav-el.btn-primary,
 .navbar-ep .nav-el.btn-secondary {
   color: #fff !important;
@@ -6268,11 +6283,7 @@ button.close {
   clear: both;
 }
 .navbar-ep .dropdown-menu .d-m-line .icon img {
-  width: 24px;
-  height: 24px;
-  margin-top: 3px;
   margin-left: 3px;
-  border-radius: 12px;
 }
 .navbar-ep .dropdown-menu .d-m-line .icon img.lg {
   width: 30px;
@@ -6308,13 +6319,13 @@ button.close {
   margin-bottom: 0;
   font-weight: 500;
 }
-.navbar-ep .bages-cat .label-default {
+.navbar-ep .bages-cat .label {
+  display: inline-block;
   background-color: #efefef;
   color: #ABABAB;
-  font-size: 14px;
-  padding: 6px;
+  line-height: 24px;
+  margin-top: 3px;
   position: relative;
-  top: 2px;
 }
 .navbar-ep .navbar-right {
   text-align: right;
@@ -6411,11 +6422,6 @@ button.close {
 }
 .navbar-ep .alert-pic i:before {
   color: #bababa;
-}
-.navbar-ep .user-pic img {
-  width: 24px;
-  height: 24px;
-  border-radius: 12px;
 }
 .navbar-ep .nav-filter {
   border: none!important;
