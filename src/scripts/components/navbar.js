@@ -14,6 +14,8 @@
 		}
 	});
 
-	console.log(123);
+	$('.tooltip-hover').hover(function() {
+		$(this).tooltip('show');
+	});
 
 })(jQuery);
