@@ -6270,9 +6270,6 @@ button.close {
   left: -190px;
   top: 36px;
 }
-.navbar-ep .dropdown-menu .d-m-line.border-bottom {
-  border-bottom: #F9F9F9 1px solid;
-}
 .navbar-ep .dropdown-menu .d-m-line .icon {
   float: left;
   width: 36px;
@@ -6360,6 +6357,7 @@ button.close {
   border-radius: 0;
   border: none;
   height: 30px;
+  background: #fff;
 }
 .navbar-ep .search-group .input-group-addon {
   border: none;
