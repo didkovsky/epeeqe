@@ -5992,11 +5992,7 @@ button.close {
 }
 .dropdown-menu li a {
   padding: 8px 16px;
-  min-height: 48px;
   overflow: hidden;
-}
-.dropdown-menu li a.sm {
-  min-height: 0;
 }
 .dropdown-menu li a.btn {
   margin: 8px 16px;
