@@ -5970,6 +5970,9 @@ button.close {
   border-right: 8px solid transparent;
   border-bottom: 8px solid white;
 }
+.dropdown-menu.arrow-left {
+  left: -8px !important;
+}
 .dropdown-menu.arrow-left:after {
   left: 0;
   margin-left: 12px;
