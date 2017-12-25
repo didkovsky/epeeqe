@@ -1,20 +1,70 @@
+html, body {
+	font-weight: 500;
+}
+
+.checkbox label, .radio label {
+	font-weight: 500;
+}
+
 .form-control {
 	box-shadow: none;
 
 	&:focus {
 		box-shadow: none;
-		border-color:  @brand-primary;
+		border-color:  @brand-secondary;
+	}
+}
+
+.has-warning {
+	.form-control {
+		box-shadow: none;
+		border-color: @brand-warning;
+
+		&:focus {
+			box-shadow: none;
+			border-color: @brand-warning;
+		}
+	}
+
+	.control-label {
+		color: @brand-warning;
+	}
+}
+
+.has-error {
+	.form-control {
+		box-shadow: none;
+		border-color: @brand-danger;
+
+		&:focus {
+			box-shadow: none;
+			border-color: @brand-danger;
+		}
+	}
+
+	.control-label {
+		color: @brand-danger;
+	}
+}
+
+.has-success {
+	.form-control {
+		box-shadow: none;
+		border-color: @brand-success;
+
+		&:focus {
+			box-shadow: none;
+			border-color: @brand-success;
+		}
+	}
+
+	.control-label {
+		color: @brand-success;
 	}
 }
 
 .well {
 	box-shadow: none;
-}
-
-.breadcrumb {
-	a{
-		//color:  @brand-primary;
-	}
 }
 
 .btn {
