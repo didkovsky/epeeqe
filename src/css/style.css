@@ -3213,8 +3213,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #bababa;
-  background-color: #F9F9F9;
+  color: #000;
+  background-color: #fff;
   border: 1px solid #e1e1e1;
   border-bottom-color: transparent;
   cursor: default;
@@ -3260,7 +3260,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #F1F1F1;
+    border-bottom-color: #e1e1e1;
   }
 }
 .nav-pills > li {
@@ -3328,7 +3328,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #F1F1F1;
+    border-bottom-color: #e1e1e1;
   }
 }
 .tab-content > .tab-pane {
@@ -5926,6 +5926,12 @@ body {
 .radio label {
   font-weight: 500;
 }
+a:hover {
+  text-decoration: none;
+}
+.progress {
+  box-shadow: none;
+}
 .form-control {
   box-shadow: none;
 }
@@ -5965,6 +5971,12 @@ body {
 }
 .has-success .control-label {
   color: #01ddc7;
+}
+.nav-pills a {
+  color: #000;
+}
+.nav-tabs a {
+  color: #000;
 }
 .well {
   box-shadow: none;
