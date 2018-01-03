@@ -25,6 +25,7 @@ gulp.task('css-min', ['less'], function() {
 gulp.task('js-compile', function() {
 	return gulp.src(['src/bower_components/jquery/dist/jquery.min.js',
 		'src/bower_components/bootstrap/dist/js/bootstrap.min.js',
+		'src/bower_components/bootstrap-select/dist/js/bootstrap-select.js',
 		'src/scripts/*.js',
 		'src/scripts/**/*.js'])
 		.pipe(concat('libs.min.js'))
