@@ -6884,3 +6884,34 @@ select.selectpicker {
     display: none;
   }
 }
+.tag-holder {
+  background-color: #F9F9F9;
+  border-radius: 4px;
+  padding: 12px;
+}
+.tag-holder .tag {
+  background-color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: #e1e1e1 1px solid;
+}
+.tag-holder .tag-primary {
+  background-color: #FB2775;
+  border-color: #FB2775;
+  color: #fff;
+}
+.tag-holder .tag-secondary {
+  background-color: #8E36AB;
+  border-color: #8E36AB;
+  color: #fff;
+}
+.tag-holder .rm {
+  color: inherit;
+  margin-left: 4px;
+  background: transparent;
+  border: none;
+  width: 16px;
+}
+.tag-holder .rm:hover {
+  opacity: .5;
+}
