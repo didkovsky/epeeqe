@@ -2,13 +2,24 @@
 .tag-holder {
   background-color: @gray-lighter;
   border-radius: @border-radius-base;
-  padding: 12px;
+  padding: 8px 12px 12px 12px;
 
-  .tag {
+  .tag, .add {
+    display: inline-block;
     background-color: @white;
+    margin-top: 4px;
     padding: 4px 8px;
     border-radius: @border-radius-base;
     border: @gray-ef 1px solid;
+  }
+
+  .add {
+    margin-top: 0;
+  }
+
+  .form-group {
+    padding: 4px;
+    margin-bottom: 0;
   }
 
   .tag-primary  {
