@@ -5978,6 +5978,14 @@ a:hover {
 .has-success .control-label {
   color: #01ddc7;
 }
+label {
+  font-size: 12px;
+  font-weight: 600;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 0;
+}
 .nav-pills a {
   color: #000;
 }
