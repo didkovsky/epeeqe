@@ -6075,11 +6075,17 @@ input[type="radio"] {
 .dropdown-menu li a.btn:hover {
   color: #FB2775;
 }
+.modal-content {
+  padding: 0 16px;
+}
 .modal-header {
   border: none;
 }
+.modal-header .close {
+  margin-top: -6px;
+  margin-right: -16px;
+}
 .modal-footer {
-  padding: 15px 0 0 0;
   border: none;
 }
 .bootstrap-select {
@@ -6954,4 +6960,45 @@ select.selectpicker {
 }
 .tag-holder .rm:hover {
   opacity: 1;
+}
+.user-c-l {
+  padding: 16px;
+  background: #F9F9F9;
+  border-radius: 4px;
+}
+.user-c-l::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+.user-c-l .pic {
+  width: 64px;
+  height: 64px;
+  position: relative;
+  float: left;
+}
+.user-c-l .pic img {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+}
+.user-c-l .content {
+  position: relative;
+  float: left;
+  padding-left: 16px;
+}
+.user-c-l .content p,
+.user-c-l .content h2,
+.user-c-l .content h3,
+.user-c-l .content h4 {
+  margin-bottom: 6px;
+}
+.user-c-l .content h4 {
+  margin-top: 12px;
+}
+.user-c-l .annotation {
+  color: #bababa;
+  font-weight: 500;
 }

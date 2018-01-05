@@ -15,9 +15,9 @@
     <div class="row">
       <div class="col-md-12">
         <div class="well">
-          <a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-primary">Add content</a>
+          <a href="#" data-toggle="modal" data-target="#add-content" class="btn btn-primary">Add content</a>
           <hr>
-          <a href="#" class="btn btn-primary">First</a>
+          <a href="#" data-toggle="modal" data-target="#add-info" class="btn btn-primary">Add info</a>
           <hr>
           <a href="#" class="btn btn-primary">First</a>
           <hr>
@@ -35,9 +35,9 @@
   </div>
 
 
-<!-- Popups
+<!-- Add content
 ================================================== -->
-<div id="modal1" class="modal fade">
+<div id="add-content" class="modal fade">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -45,71 +45,141 @@
         <h4 class="modal-title">Add content</h4>
       </div>
       <div class="modal-body">
-      <!--  <form action="/"> -->
-          <label for="inputUrl" class="control-label">Url</label>
-          <div class="row">
-            <div class="col-sm-10 col-xs-12">
-              <div class="form-group">
-                <input class="form-control" id="inputUrl" placeholder="URL" type="text">
-              </div>
-            </div>
-            <div class="col-sm-2 col-xs-12">
-              <select class="form-control selectpicker" id="lang">
-                <option>RU</option>
-                <option>ENG</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="a-descrpition" class="control-label">Description</label>
-            <textarea id="a-descrpition" name="description" class="form-control" rows="8" cols="80"></textarea>
-          </div>
-          <div class="form-group">
-            <label for="a-descrpition" class="control-label">Categories</label>
-            <div class="tag-holder">
-              <div class="btn-group">
-                <button data-toggle="dropdown" class="add">+</button>
-                <ul class="dropdown-menu arrow-top arrow-left" role="menu">
-                  <li class="form-group"><input placeholder="Search categorie..." class="form-control input-sm" type="text"></li>
-                  <li><a href="#">Item 1</a></li>
-                  <li><a href="#">Item 2</a></li>
-                  <li><a href="#">Item 3</a></li>
-                  <li><a href="#">Item 4</a></li>
-                  <li><a href="#">Item 5</a></li>
-                  <li><a href="#">Item 6</a></li>
-                </ul>
-              </div>
-              <span class="tag">Category 1<button class="rm">×</button></span>
-              <span class="tag">Category 2<button class="rm">×</button></span>
-              <span class="tag">Category 3<button class="rm">×</button></span>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="a-descrpition" class="control-label">Tags</label>
-            <div class="tag-holder">
-              <div class="btn-group">
-                <button data-toggle="dropdown" class="add">+</button>
-                <ul class="dropdown-menu arrow-top arrow-left" role="menu">
-                  <li class="form-group"><input placeholder="Search categorie..." class="form-control input-sm" type="text"></li>
-                  <li><a href="#">Item 1</a></li>
-                  <li><a href="#">Item 2</a></li>
-                  <li><a href="#">Item 3</a></li>
-                  <li><a href="#">Item 4</a></li>
-                  <li><a href="#">Item 5</a></li>
-                  <li><a href="#">Item 6</a></li>
-                </ul>
-              </div>
-              <span class="tag tag-secondary">Typogrtaphy<button class="rm">×</button></span>
-              <span class="tag tag-primary">Lettering<button class="rm">×</button></span>
-              <span class="tag tag-secondary">Photo<button class="rm">×</button></span>
-            </div>
-          </div>
-          <div class="modal-footer">
+        <label for="inputUrl" class="control-label">Url</label>
+        <div class="row">
+          <div class="col-sm-10 col-xs-12">
             <div class="form-group">
-              <button class="btn btn-primary btn-block btn-lg">add content</button>
+              <input class="form-control" id="inputUrl" placeholder="URL" type="text">
             </div>
           </div>
-        <!-- </form> -->
+          <div class="col-sm-2 col-xs-12">
+            <select class="form-control selectpicker" id="lang">
+              <option>RU</option>
+              <option>ENG</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="a-descrpition" class="control-label">Description</label>
+          <textarea id="a-descrpition" name="description" class="form-control" rows="8" cols="80"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="a-descrpition" class="control-label">Categories</label>
+          <div class="tag-holder">
+            <div class="btn-group">
+              <button data-toggle="dropdown" class="add">+</button>
+              <ul class="dropdown-menu arrow-top arrow-left" role="menu">
+                <li class="form-group"><input placeholder="Search categorie..." class="form-control input-sm" type="text"></li>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+                <li><a href="#">Item 5</a></li>
+                <li><a href="#">Item 6</a></li>
+              </ul>
+            </div>
+            <span class="tag">Category 1<button class="rm">×</button></span>
+            <span class="tag">Category 2<button class="rm">×</button></span>
+            <span class="tag">Category 3<button class="rm">×</button></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="a-descrpition" class="control-label">Tags</label>
+          <div class="tag-holder">
+            <div class="btn-group">
+              <button data-toggle="dropdown" class="add">+</button>
+              <ul class="dropdown-menu arrow-top arrow-left" role="menu">
+                <li class="form-group"><input placeholder="Search categorie..." class="form-control input-sm" type="text"></li>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+                <li><a href="#">Item 5</a></li>
+                <li><a href="#">Item 6</a></li>
+              </ul>
+            </div>
+            <span class="tag tag-secondary">Typogrtaphy<button class="rm">×</button></span>
+            <span class="tag tag-primary">Lettering<button class="rm">×</button></span>
+            <span class="tag tag-secondary">Photo<button class="rm">×</button></span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="form-group">
+          <button class="btn btn-primary btn-block btn-lg">add content</button>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Add additional info
+================================================== -->
+<div class="modal fade" id="add-info">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Add some additional information to this source</h4>
+      </div>
+      <div class="modal-body">
+        <div class="user-c-l form-group">
+          <div class="pic"><img src="../img/ava.png" alt=""></div>
+          <div class="content">
+            <h4>Behance featured projects</h4>
+            <span class="annotation">863 Folowers</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="a-descrpition" class="control-label">Categories</label>
+          <div class="tag-holder">
+            <div class="btn-group">
+              <button data-toggle="dropdown" class="add">+</button>
+              <ul class="dropdown-menu arrow-top arrow-left" role="menu">
+                <li class="form-group"><input placeholder="Search categorie..." class="form-control input-sm" type="text"></li>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+                <li><a href="#">Item 5</a></li>
+                <li><a href="#">Item 6</a></li>
+              </ul>
+            </div>
+            <span class="tag">Category 1<button class="rm">×</button></span>
+            <span class="tag">Category 2<button class="rm">×</button></span>
+            <span class="tag">Category 3<button class="rm">×</button></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="a-descrpition" class="control-label">Description</label>
+          <textarea id="a-descrpition" name="description" class="form-control" rows="8" cols="80"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="a-descrpition" class="control-label">Tags</label>
+          <div class="tag-holder">
+            <div class="btn-group">
+              <button data-toggle="dropdown" class="add">+</button>
+              <ul class="dropdown-menu arrow-top arrow-left" role="menu">
+                <li class="form-group"><input placeholder="Search categorie..." class="form-control input-sm" type="text"></li>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+                <li><a href="#">Item 5</a></li>
+                <li><a href="#">Item 6</a></li>
+              </ul>
+            </div>
+            <span class="tag tag-secondary">Typogrtaphy<button class="rm">×</button></span>
+            <span class="tag tag-primary">Lettering<button class="rm">×</button></span>
+            <span class="tag tag-secondary">Photo<button class="rm">×</button></span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="form-group">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
+          <button type="button" class="btn btn-primary">Next</button>
+        </div>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

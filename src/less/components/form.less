@@ -50,3 +50,49 @@
     }
   }
 }
+
+.user-c-l {
+  padding: 16px;
+  background: @gray-lighter;
+  border-radius: @border-radius-base;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear:both;
+  }
+
+  .pic {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    float: left;
+
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 32px;
+    }
+  }
+
+  .content {
+    position: relative;
+    float: left;
+    padding-left: 16px;
+
+    p, h2, h3, h4 {
+      margin-bottom: 6px;
+    }
+
+    h4 {
+      margin-top: 12px;
+    }
+  }
+
+  .annotation {
+    color: @gray;
+    font-weight: 500;
+  }
+}
