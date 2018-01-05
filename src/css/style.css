@@ -5940,9 +5940,13 @@ a:hover {
 }
 .form-control {
   box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
 }
 .form-control:focus {
   box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
   border-color: #8E36AB;
 }
 .has-warning .form-control {
@@ -6070,6 +6074,19 @@ input[type="radio"] {
 }
 .dropdown-menu li a.btn:hover {
   color: #FB2775;
+}
+.modal-header {
+  border: none;
+}
+.modal-footer {
+  padding: 15px 0 0 0;
+  border: none;
+}
+.bootstrap-select {
+  width: 100%!important;
+}
+.bootstrap-select .dropdown-toggle {
+  height: 40px;
 }
 @font-face {
   font-family: "Roboto";
@@ -6905,6 +6922,10 @@ select.selectpicker {
   padding: 4px 8px;
   border-radius: 4px;
   border: #e1e1e1 1px solid;
+}
+.tag-holder .tag .sm,
+.tag-holder .add .sm {
+  font-size: 12px;
 }
 .tag-holder .add {
   margin-top: 0;

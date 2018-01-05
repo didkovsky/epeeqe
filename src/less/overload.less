@@ -28,9 +28,13 @@ a {
 
 .form-control {
 	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
 
 	&:focus {
 		box-shadow: none;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
 		border-color:  @brand-secondary;
 	}
 }
@@ -208,4 +212,26 @@ input[type="checkbox"], input[type="radio"] {
 			}
 		}
 	}
+}
+
+.modal-content {
+	//overflow: hidden;
+}
+
+.modal-header {
+	border: none;
+	//background: @gray-lighter;
+}
+
+.modal-footer {
+	padding: 15px 0 0 0;
+	border: none;
+}
+
+.bootstrap-select {
+    width: 100%!important;
+
+		.dropdown-toggle {
+			height: 40px;
+		}
 }
