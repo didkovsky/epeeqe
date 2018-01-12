@@ -7002,3 +7002,42 @@ select.selectpicker {
   color: #bababa;
   font-weight: 500;
 }
+.form-spoiler {
+  background-color: #F9F9F9;
+  border-radius: 4px;
+}
+.form-spoiler.active .icon {
+  transform: rotate(45deg);
+}
+.form-spoiler .spoiler-header {
+  padding: 12px;
+  color: #bababa;
+  display: block;
+}
+.form-spoiler .spoiler-header::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+.form-spoiler .spoiler-header .icon,
+.form-spoiler .spoiler-header .description {
+  float: left;
+}
+.form-spoiler .spoiler-header .description {
+  display: none;
+  line-height: 24px;
+  margin-left: 12px;
+}
+.form-spoiler .spoiler-header .description.visible {
+  display: block;
+}
+.form-spoiler .spoiler-header .icon {
+  top: 0;
+}
+.form-spoiler .spoiler-content {
+  padding: 12px;
+  border-top: #fff 1px solid;
+  display: none;
+}
