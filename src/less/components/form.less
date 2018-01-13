@@ -145,3 +145,28 @@
     display: none;
   }
 }
+
+//Drop fieldset
+.drop-field {
+  border-bottom: @white 1px solid;
+  width: 100%;
+  height: 264px;
+  text-align: center;
+  position: relative;
+
+  i {
+    width: 64px;
+    height: 64px;
+    display: block;
+    top: 50%;
+    left: 50%;
+    margin-left: -32px;
+    margin-top: -32px;
+
+    &:before {
+      color: @gray-light;
+      font-size: 64px;
+      line-height: 64px;
+    }
+  }
+}
