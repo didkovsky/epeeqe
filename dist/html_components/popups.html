@@ -19,9 +19,9 @@
           <hr>
           <a href="#" data-toggle="modal" data-target="#add-info" class="btn btn-primary">Add info</a>
           <hr>
-          <a href="#" class="btn btn-primary">First</a>
+          <a href="#" data-toggle="modal" data-target="#rtp" class="btn btn-primary">Report pos</a>
           <hr>
-          <a href="#" class="btn btn-primary">First</a>
+          <a href="#" data-toggle="modal" data-target="#cc"  class="btn btn-primary">Create collection</a>
           <hr>
           <a href="#" class="btn btn-primary">First</a>
           <hr>
@@ -184,6 +184,88 @@
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 
+  <!-- Report this post
+  ================================================== -->
+  <div class="modal fade" id="rtp">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4>Report this post</h4>
+        </div>
+        <div class="modal-body">
+          <div class="list-group">
+            <a class="list-group-item" href="#">Sexual content</a>
+            <a class="list-group-item" href="#">Violent content</a>
+            <a class="list-group-item" href="#">Spam</a>
+            <a class="list-group-item" href="#">Page doesn't load</a>
+            <a class="list-group-item" href="#">Wrong categorie</a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="form-group">
+            <div class="btn btn-primary">Report</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Create collection
+  ================================================== -->
+  <div class="modal fade" id="cc">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4>Create collection</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <div class="form-spoiler">
+            <a class="spoiler-header ad-rm" href="javascript: void(0);">
+              <i class="icon icon-ei-plus"></i>
+              <span class="description visible">Add description</span>
+              <span class="description">Remove description</span>
+            </a>
+            <div class="spoiler-content">
+              <div class="form-group">
+                <textarea class="form-control" rows="3" placeholder="description..."></textarea>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="form-group">
+            <div class="form-spoiler">
+            <a class="spoiler-header ad-rm" href="javascript: void(0);">
+              <i class="icon icon-ei-plus"></i>
+              <span class="description visible">Add image</span>
+              <span class="description">Remove image</span>
+            </a>
+            <div class="spoiler-content">
+              <div class="form-group">
+                <div class="drop-field">
+                  <i class="icon-ei-star"></i>
+                </div>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-xs btn-primary">choose file</button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="form-group">
+            <div class="btn btn-primary">create</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 <script src="../js/libs.min.js"></script>
 </body>
 </html>
