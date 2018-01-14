@@ -1,0 +1,120 @@
+.nav-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 264px;
+  background: @white;
+  height: 100%;
+  overflow: auto;
+  //padding: 16px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .icon, .content {
+    float: left;
+  }
+
+  .divider {
+    margin: 8px 0;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 1px;
+      background: @gray-ef;
+      margin: 0 16px;
+    }
+  }
+
+  li {
+    //padding: 0 16px;
+  }
+
+  .item {
+    display: block;
+    padding: 8px 16px;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      clear: both;
+    }
+
+    .badge {
+      float: right;
+      font-size: 10px;
+      color: @gray-base;
+      background: @gray-lighter;
+      border-radius: 12px;
+      margin-top: 6px;
+    }
+  }
+
+  .icon  {
+    width: 30px;
+    height: 30px;
+    color: @gray;
+    margin-right: 8px;
+
+    i {
+      //margin-top: 3px;
+    }
+
+    img {
+      margin-top: 3px;
+      width: 24px;
+      height: 24px;
+      border-radius: 16px;
+    }
+  }
+
+  .content {
+    line-height: 30px;
+    color: @gray-base;
+    width: ~"calc(100% - 86px)";
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    //display: none;
+  }
+
+  .spoiler {
+    padding: 0;
+
+    .control {
+      color: @gray-base;
+      text-transform: uppercase;
+      line-height: 30px;
+
+      i {
+        float: right;
+      }
+
+      &.active {
+        i {
+          transform: rotate(270deg);
+        }
+      }
+    }
+
+    ul {
+      //display: none;
+
+      li a:hover {
+        background: @gray-lighter;
+      }
+    }
+
+    .show-more {
+      color: @gray;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
