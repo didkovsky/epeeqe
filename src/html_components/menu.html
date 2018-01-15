@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <ul class="nav nav-sidebar">
+  <ul class="nav nav-sidebar collapsed">
     <li>
       <a href="#" class="item">
         <div class="icon"><i class="icon-ei-badge"></i></div>
@@ -31,6 +31,7 @@
     <li class="divider"></li>
     <li class="spoiler">
       <a href="javascript: void(0);" class="control">Subscriptions <i class="icon-ei-chevron-down-sm"></i></a>
+      <a href="#" class="control-collapsed">s</a>
       <ul>
         <li>
           <a href="#" class="item">
@@ -63,11 +64,18 @@
       </ul>
       <a href="#" class="show-more">Show more</a>
     </li>
-    <li class="divider"></li>
-    <li><span class="item">All channels</span></li>
+    <li class="divider collapsed-hidden"></li>
+    <li class="collapsed-hidden"><span class="item">All channels</span></li>
     <li class="divider"></li>
     <li class="spoiler">
       <a href="javascript: void(0);" class="control">Collections <i class="icon-ei-chevron-down-sm"></i></a>
+      <a href="#" class="control-collapsed">C
+
+
+
+
+
+      </a>
       <ul>
         <li>
           <a href="#" class="item">
@@ -121,6 +129,15 @@
     </li>
   </ul>
 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="well">
+          <button class="btn btn-primary menu-control">hide menu</button>
+        </div>
+      </div>
+    </div>
+  </div>
 <script src="../js/libs.min.js"></script>
 </body>
 </html>

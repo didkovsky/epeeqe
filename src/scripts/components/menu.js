@@ -7,4 +7,8 @@
     spoiler.find('.control').toggleClass('active');
   });
 
+  $('.menu-control').click(function() {
+    $('.nav-sidebar').toggleClass('collapsed');
+  });
+
 })(jQuery);

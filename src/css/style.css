@@ -6923,6 +6923,8 @@ select.selectpicker {
   background: #fff;
   height: 100%;
   overflow: auto;
+  z-index: 500;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 .nav-sidebar ul {
   list-style: none;
@@ -6968,8 +6970,12 @@ select.selectpicker {
   color: #bababa;
   margin-right: 8px;
 }
+.nav-sidebar .icon i {
+  margin-left: 3px;
+}
 .nav-sidebar .icon img {
   margin-top: 3px;
+  margin-left: 3px;
   width: 24px;
   height: 24px;
   border-radius: 16px;
@@ -6984,6 +6990,9 @@ select.selectpicker {
 }
 .nav-sidebar .spoiler {
   padding: 0;
+}
+.nav-sidebar .spoiler .control-collapsed {
+  display: none;
 }
 .nav-sidebar .spoiler .control {
   color: #000;
@@ -7003,6 +7012,40 @@ select.selectpicker {
   color: #bababa;
   font-size: 12px;
   line-height: 16px;
+}
+.nav-sidebar.collapsed {
+  width: auto;
+}
+.nav-sidebar.collapsed .collapsed-hidden {
+  display: none;
+}
+.nav-sidebar.collapsed .collapsed-visible {
+  display: block;
+}
+.nav-sidebar.collapsed .badge {
+  display: none;
+}
+.nav-sidebar.collapsed .icon {
+  margin-right: 0;
+}
+.nav-sidebar.collapsed .content {
+  display: none;
+}
+.nav-sidebar.collapsed .spoiler .control {
+  display: none;
+}
+.nav-sidebar.collapsed .spoiler .control-collapsed {
+  display: block;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 30px;
+}
+.nav-sidebar.collapsed .spoiler .show-more {
+  display: none;
+}
+.nav-sidebar.collapsed .spoiler ul {
+  display: block;
 }
 .tag-holder {
   background-color: #F9F9F9;
