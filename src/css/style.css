@@ -7180,14 +7180,24 @@ select.selectpicker {
   text-align: center;
   position: relative;
 }
+.drop-field h4 {
+  color: #bababa;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+}
 .drop-field i {
   width: 64px;
   height: 64px;
   display: block;
+  position: absolute;
   top: 50%;
   left: 50%;
   margin-left: -32px;
-  margin-top: -32px;
+  margin-top: -40px;
 }
 .drop-field i:before {
   color: #f5f5f5;
