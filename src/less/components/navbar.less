@@ -285,21 +285,25 @@
 		border:  none!important;
 		margin:  auto;
 
+		.active {
+			a{
+				&::after {
+					content:  " ";
+					display:  block;
+					position: absolute;
+					width: 20px;
+					height: 4px;
+					border-radius: 2px;
+					background: @brand-primary;
+					left: 50%;
+					margin-left: -10px;
+				}
+			}
+		}
+
 		a {
 			color: @gray-base;
 			font-weight:  600;
-
-			&.active::after {
-				content:  " ";
-				display:  block;
-				position: absolute;
-				width: 20px;
-				height: 4px;
-				border-radius: 2px;
-				background: @brand-primary;
-				left: 50%;
-				margin-left: -10px;
-			}
 		}
 	}
 

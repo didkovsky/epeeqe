@@ -6872,11 +6872,7 @@ select.selectpicker {
   border: none!important;
   margin: auto;
 }
-.navbar-ep .nav-filter a {
-  color: #000;
-  font-weight: 600;
-}
-.navbar-ep .nav-filter a.active::after {
+.navbar-ep .nav-filter .active a::after {
   content: " ";
   display: block;
   position: absolute;
@@ -6886,6 +6882,10 @@ select.selectpicker {
   background: #FB2775;
   left: 50%;
   margin-left: -10px;
+}
+.navbar-ep .nav-filter a {
+  color: #000;
+  font-weight: 600;
 }
 .navbar-ep .btn-sign {
   margin-left: 0;
