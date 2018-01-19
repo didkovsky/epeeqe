@@ -1,0 +1,108 @@
+.public-card {
+  background-color: @white;
+  border-radius: @border-radius-base;
+  margin-top: 20px;
+  overflow: hidden;
+
+  .pc-header {
+    padding: 12px 16px;
+    border-bottom: @gray-light 1px solid;
+    //background-color: @gray-lighter;
+
+    .no-padding {
+      padding-right: 0;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      clear: both;
+    }
+
+    .ava {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      float: left;
+      margin-right: 12px;
+    }
+
+    .content {
+      float: left;
+
+      .name {
+        margin: 0;
+      }
+
+      .cat {
+        margin: 0;
+      }
+    }
+
+    .navigation {
+      text-align: right;
+
+      a {
+        color: @gray-ef;
+        width: 24px;
+        height: 40px;
+        margin-left: 12px;
+        line-height: 40px;
+      }
+
+      .icon-ei-plus {
+        color: @brand-primary;
+      }
+    }
+  }
+
+  .pc-content {
+    .description {
+      //color: @gray;
+      padding: 8px 16px;
+
+      .date {
+        color: @gray;
+        display: block;
+        margin-bottom: 8px;
+      }
+    }
+
+    .card-img {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .pc-footer {
+    padding: 16px;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      clear: both;
+    }
+
+    a {
+      color: @gray-ef;
+      text-align: center;
+      display: block;
+      float: left;
+      width: 25%;
+
+      i {
+        margin-right: 12px;
+      }
+    }
+  }
+}
