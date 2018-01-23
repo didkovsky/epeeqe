@@ -7217,7 +7217,7 @@ select.selectpicker {
 .public-card {
   background-color: #fff;
   border-radius: 4px;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .public-card .pc-header {
   padding: 12px 16px;
