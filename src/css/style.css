@@ -7023,6 +7023,7 @@ select.selectpicker {
   line-height: 16px;
 }
 .nav-sidebar.collapsed {
+  display: none;
   width: auto;
 }
 .nav-sidebar.collapsed .collapsed-hidden {
