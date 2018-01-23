@@ -5921,6 +5921,7 @@ button.close {
 html,
 body {
   font-weight: 500;
+  height: 100%;
 }
 .checkbox label,
 .radio label {
@@ -6643,6 +6644,14 @@ select.selectpicker {
   margin-bottom: 0;
   width: 100%;
   float: none;
+}
+.public-frame {
+  width: 100%;
+  height: calc(100% - 117px);
+  margin-top: -20px;
+}
+.public-body {
+  overflow: hidden;
 }
 .navbar-ep {
   width: 100%;
