@@ -6653,6 +6653,14 @@ select.selectpicker {
 .public-body {
   overflow: hidden;
 }
+.card-list {
+  max-width: 1360px;
+}
+@media screen and (min-width: 1200px) {
+  .card-list {
+    width: 1360px;
+  }
+}
 .navbar-ep {
   width: 100%;
   background-color: #fff;
