@@ -18,3 +18,59 @@
     line-height: 34px;
   }
 }
+
+.recomended-channels {
+  padding: 0;
+
+  li {
+    padding: 0;
+  }
+
+  .header {
+    padding: 8px 16px;
+  }
+  
+  .content {
+    display: block;
+    text-decoration: none;
+    color: @gray-base;
+    line-height: 40px;
+    padding: 8px 16px;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      clear: both;
+    }
+
+    &:hover {
+      background-color: @gray-lighter;
+    }
+
+    .icon {
+      width: 40px;
+      height: 40px;
+      float: left;
+      margin-right: 16px;
+      text-align: center;
+
+      i {
+        color: @gray-ef;
+        font-size: 24px;
+        line-height: 40px;
+      }
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+      }
+    }
+
+    .name {
+      float: left;
+    }
+  }
+}

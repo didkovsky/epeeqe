@@ -6669,6 +6669,52 @@ select.selectpicker {
   margin-bottom: 0;
   line-height: 34px;
 }
+.recomended-channels {
+  padding: 0;
+}
+.recomended-channels li {
+  padding: 0;
+}
+.recomended-channels .header {
+  padding: 8px 16px;
+}
+.recomended-channels .content {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  line-height: 40px;
+  padding: 8px 16px;
+}
+.recomended-channels .content::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+.recomended-channels .content:hover {
+  background-color: #F9F9F9;
+}
+.recomended-channels .content .icon {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: 16px;
+  text-align: center;
+}
+.recomended-channels .content .icon i {
+  color: #e1e1e1;
+  font-size: 24px;
+  line-height: 40px;
+}
+.recomended-channels .content .icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+.recomended-channels .content .name {
+  float: left;
+}
 .navbar-ep {
   width: 100%;
   background-color: #fff;
