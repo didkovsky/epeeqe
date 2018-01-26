@@ -6673,6 +6673,13 @@ select.selectpicker {
   margin-bottom: 20px;
   border-bottom: #e1e1e1 1px solid;
 }
+.sub-section .card-spoiler {
+  height: 597px;
+  overflow: hidden;
+}
+.sub-section .card-spoiler.open {
+  height: auto;
+}
 .recomended-channels {
   padding: 0;
 }
