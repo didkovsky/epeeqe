@@ -6661,13 +6661,17 @@ select.selectpicker {
     width: 1360px;
   }
 }
-.section-header {
-  margin-top: 20px;
+.sub-section .section-header {
+  padding: 20px 0;
 }
-.section-header h3 {
+.sub-section .section-header h4 {
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 34px;
+}
+.sub-section .section-footer {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: #e1e1e1 1px solid;
 }
 .recomended-channels {
   padding: 0;
