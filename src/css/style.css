@@ -6674,11 +6674,20 @@ select.selectpicker {
   border-bottom: #e1e1e1 1px solid;
 }
 .sub-section .card-spoiler {
-  height: 597px;
+  height: 617px;
   overflow: hidden;
 }
-.sub-section .card-spoiler.open {
+.sub-section .close-spoiler {
+  display: none;
+}
+.sub-section.open .card-spoiler {
   height: auto;
+}
+.sub-section.open .close-spoiler {
+  display: inline-block;
+}
+.sub-section.open .open-spoiler {
+  display: none;
 }
 .recomended-channels {
   padding: 0;

@@ -25,11 +25,25 @@
   }
 
   .card-spoiler {
-    height: 597px;
+    height: 617px;
     overflow: hidden;
+  }
 
-    &.open {
+  .close-spoiler {
+    display: none;
+  }
+
+  &.open {
+    .card-spoiler {
       height: auto;
+    }
+
+    .close-spoiler {
+      display: inline-block;
+    }
+
+    .open-spoiler {
+      display: none;
     }
   }
 }
