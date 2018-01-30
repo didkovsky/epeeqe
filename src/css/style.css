@@ -7395,7 +7395,7 @@ select.selectpicker {
   margin-right: 12px;
 }
 .comment-section .comment-section-header {
-  padding-bottom: 16px;
+  padding-bottom: 8px;
 }
 .comment-section .comment-section-header::after {
   content: '';
@@ -7423,12 +7423,15 @@ select.selectpicker {
 .comment-section .comment-section-header .form-group .form-control {
   height: auto;
 }
+.comment-section .comment-section-content .replies {
+  display: none;
+  padding-left: 32px;
+}
 .comment-section .comment-section-content .comment-group {
-  padding: 0 32px;
   margin-top: 8px;
 }
 .comment-section .comment-section-content .comment-group .comment {
-  padding: 16px;
+  padding: 8px 16px;
   border-radius: 4px;
 }
 .comment-section .comment-section-content .comment-group .comment:hover {
