@@ -1,7 +1,8 @@
 .comment-section {
 
   .comment-section-header {
-    padding-bottom: 8px;
+    //padding-bottom: 8px;
+    padding-left: 16px;
 
     &::after {
       content:'';
@@ -25,7 +26,7 @@
     }
 
     .form-group {
-      float: left;
+      float: right;
       width: ~"calc(100% - 56px)";
       margin-top: 4px;
 
@@ -44,6 +45,45 @@
 
     .comment-group {
       margin-top: 8px;
+
+      .add-comment {
+        padding: 8px 16px;
+
+        &::after {
+          content:'';
+          display: block;
+          width: 0;
+          height: 0;
+          clear: both;
+        }
+
+        .icon {
+          width: 40px;
+          height: 40px;
+          float: left;
+          margin-right: 16px;
+
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+          }
+        }
+
+        .btn {
+          margin-left: 8px;
+        }
+
+        .form-group {
+          float: right;
+          width: ~"calc(100% - 56px)";
+          margin-top: 4px;
+
+          .form-control {
+            height: auto;
+          }
+        }
+      }
 
       .comment {
         padding: 8px 16px;
@@ -138,7 +178,7 @@
   .comment-section-footer {
     margin-top: 8px;
     padding-top: 16px;
-    text-align: center;
+    //text-align: center;
 
     .pagination {
       margin: auto;

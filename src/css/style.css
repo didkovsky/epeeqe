@@ -7395,7 +7395,7 @@ select.selectpicker {
   margin-right: 12px;
 }
 .comment-section .comment-section-header {
-  padding-bottom: 8px;
+  padding-left: 16px;
 }
 .comment-section .comment-section-header::after {
   content: '';
@@ -7416,7 +7416,7 @@ select.selectpicker {
   border-radius: 20px;
 }
 .comment-section .comment-section-header .form-group {
-  float: left;
+  float: right;
   width: calc(100% - 56px);
   margin-top: 4px;
 }
@@ -7429,6 +7429,38 @@ select.selectpicker {
 }
 .comment-section .comment-section-content .comment-group {
   margin-top: 8px;
+}
+.comment-section .comment-section-content .comment-group .add-comment {
+  padding: 8px 16px;
+}
+.comment-section .comment-section-content .comment-group .add-comment::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+.comment-section .comment-section-content .comment-group .add-comment .icon {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: 16px;
+}
+.comment-section .comment-section-content .comment-group .add-comment .icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+.comment-section .comment-section-content .comment-group .add-comment .btn {
+  margin-left: 8px;
+}
+.comment-section .comment-section-content .comment-group .add-comment .form-group {
+  float: right;
+  width: calc(100% - 56px);
+  margin-top: 4px;
+}
+.comment-section .comment-section-content .comment-group .add-comment .form-group .form-control {
+  height: auto;
 }
 .comment-section .comment-section-content .comment-group .comment {
   padding: 8px 16px;
@@ -7496,7 +7528,6 @@ select.selectpicker {
 .comment-section .comment-section-footer {
   margin-top: 8px;
   padding-top: 16px;
-  text-align: center;
 }
 .comment-section .comment-section-footer .pagination {
   margin: auto;
