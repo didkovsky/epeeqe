@@ -1,0 +1,45 @@
+.spoiler {
+  .spoiler-control {
+    display: block;
+    line-height: 24px;
+    padding: 8px;
+    color: @gray-dark;
+    text-decoration: none;
+
+    &::after {
+      content: '';
+      width: 0;
+      height: 0;
+      display: block;
+      clear: both;
+    }
+
+    i {
+      position: relative;
+      top: 0px;
+    }
+
+    i::before {
+      line-height: 24px!important;
+      height: 24px;
+    }
+
+    &:hover {
+      background-color: @gray-lighter;
+      text-decoration: none;
+    }
+  }
+
+  .spoiler-content {
+    padding: 8px;
+    display: none;
+  }
+
+  &.active {
+    .spoiler-control {
+      i {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
