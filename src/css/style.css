@@ -7005,8 +7005,32 @@ select.selectpicker {
     margin-left: 6px;
     margin-right: 6px;
   }
+  .navbar-ep .col-xs-4,
+  .navbar-ep .col-xs-5,
+  .navbar-ep .col-xs-6,
+  .navbar-ep .col-xs-7,
+  .navbar-ep .col-xs-8 {
+    padding-right: 0!important;
+    padding-left: 0!important;
+  }
+  .navbar-ep .logo img {
+    position: relative;
+    height: 24px;
+    top: 2px;
+  }
   .navbar-ep.nav-group-justified {
     margin: 0;
+  }
+}
+@media (max-width: 480px) {
+  .navbar-ep .nav-el {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .navbar-ep .logo img {
+    position: relative;
+    height: 18px;
+    top: 2px;
   }
 }
 @media (max-width: 1212px) {

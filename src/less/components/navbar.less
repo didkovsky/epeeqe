@@ -335,12 +335,42 @@
 			margin-right: 6px;
 		}
 
+		.col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8 {
+			padding-right: 0!important;
+			padding-left: 0!important;
+		}
+
+		.logo {
+			img {
+				position: relative;
+				height: 24px;
+				top: 2px;
+			}
+		}
+
 		.nav-group-justified-conteiner {
 			//text-align: left;
 		}
 
 		&.nav-group-justified {
 			margin: 0;
+		}
+	}
+}
+
+@media (max-width: @screen-xs) {
+	.navbar-ep {
+		.nav-el {
+			margin-left: 4px;
+			margin-right: 4px;
+		}
+
+		.logo {
+			img {
+				position: relative;
+				height: 18px;
+				top: 2px;
+			}
 		}
 	}
 }
