@@ -1,8 +1,9 @@
 (function($) {
 
-  $('.spoiler-control').click(function() {
+  $('.spoiler-control').click(function(e) {
+    e.preventDefault();
     var spoiler = $(this).parent();
-    spoiler.toggleClass('active');
+    spoiler.toggleClass('spoiler-active');
     spoiler.find('.spoiler-content').slideToggle();
   });
 
