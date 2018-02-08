@@ -210,7 +210,7 @@
 	}
 
 	.logo {
-		margin-top: 2px;
+		//margin-top: 2px;
 		img {
 			height: 30px;
 			width: auto;
@@ -356,6 +356,16 @@
 	}
 }
 
+@media (max-width: @screen-md) {
+	.mnavbar-ep {
+		.logo {
+			img {
+				height: 24px;
+			}
+		}
+	}
+}
+
 @media (max-width: @screen-sm) {
 
 	.navbar-ep {
@@ -372,7 +382,7 @@
 		.logo {
 			img {
 				position: relative;
-				height: 24px;
+				height: 24px!important;
 				top: 2px;
 			}
 		}

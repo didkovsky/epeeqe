@@ -6912,9 +6912,6 @@ select.selectpicker {
 .navbar-ep .menu-button i:before {
   color: #8E36AB !important;
 }
-.navbar-ep .logo {
-  margin-top: 2px;
-}
 .navbar-ep .logo img {
   height: 30px;
   width: auto;
@@ -7030,6 +7027,11 @@ select.selectpicker {
 .navbar-ep .nav-tabs.nav-justified > li > a {
   margin: 0!important;
 }
+@media (max-width: 992px) {
+  .mnavbar-ep .logo img {
+    height: 24px;
+  }
+}
 @media (max-width: 768px) {
   .navbar-ep .nav-el {
     margin-left: 6px;
@@ -7045,7 +7047,7 @@ select.selectpicker {
   }
   .navbar-ep .logo img {
     position: relative;
-    height: 24px;
+    height: 24px!important;
     top: 2px;
   }
   .navbar-ep.nav-group-justified {
