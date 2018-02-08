@@ -26,6 +26,7 @@ gulp.task('js-compile', function() {
 	return gulp.src(['src/bower_components/jquery/dist/jquery.min.js',
 		'src/bower_components/bootstrap/dist/js/bootstrap.min.js',
 		'src/bower_components/bootstrap-select/dist/js/bootstrap-select.js',
+		'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js',
 		'src/scripts/*.js',
 		'src/scripts/**/*.js'])
 		.pipe(concat('libs.min.js'))
