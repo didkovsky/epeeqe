@@ -7,6 +7,10 @@
 	padding-top: 12px;
 	z-index: 700;
 
+	.top-line {
+		height: 53px;
+	}
+
 	.nav-group {
 		padding: 8px;
 		display: inline-block;
@@ -238,7 +242,7 @@
 			padding: 0!important;
 
 			i::before {
-				line-height: 30px;
+				//line-height: 30px;
 				font-size: 16px;
 				color: @gray;
 			}
@@ -249,25 +253,32 @@
 		}
 	}
 
-	.mobile-search-form {
-		width: 0;
-		overflow: hidden;
+	.navbar-mobile-search {
 		position: absolute;
+		width: 100%;
+		padding-top: 12px;
+		top: 0;
+		z-index: 550;
+		display: none;
+		height: 53px;
+		background: @white;
 
-		&.active {
-			width: ~"calc(200% - 176px)";
-			left: -100%;
-			margin-left: 56px;
-			-webkit-transition: width .3s cubic-bezier(0, 0, 0.03, 0.98);
-			-webkit-transition-delay: 0.5s;
-	            -moz-transition: width .3s cubic-bezier(0, 0, 0.03, 0.98);
-	            -moz-transition-delay: 0.5s;
-	        		-ms-transition: width .3s cubic-bezier(0, 0, 0.03, 0.98);
-	        		-ms-transition-delay: 0.5s;
-	        			-o-transition: width .3s cubic-bezier(0, 0, 0.03, 0.98);
-	        			-o-transition-delay: 0.5s;
-	           				transition: width .3s cubic-bezier(0, 0, 0.03, 0.98);
-	           				transition-delay: 0.5s;
+		.close-mobile-search {
+			position: absolute;
+			display: block;
+			width: 16px;
+			height: 16px;
+			left: 100%;
+			margin-left: -40px;
+			top: 0;
+			margin-top: 8px;
+			z-index: 600;
+			color: @gray;
+
+			i::before {
+				line-height: 16px;
+				font-size: 16px;
+			}
 		}
 	}
 
@@ -282,22 +293,6 @@
 
 		i:before {
 			color: @gray;
-		}
-
-		&.active {
-			//left: -100%;
-			margin-left: 16px;
-			position: absolute;
-			-webkit-transition: left .3s cubic-bezier(0, 0, 0.03, 0.98);
-			//-webkit-transition-delay: 0.25s;
-		      -moz-transition: left .3s cubic-bezier(0, 0, 0.03, 0.98);
-		     // -moz-transition-delay: 0.25s;
-		       -ms-transition: left .3s cubic-bezier(0, 0, 0.03, 0.98);
-		      // -ms-transition-delay: 0.25s;
-		        -o-transition: left .3s cubic-bezier(0, 0, 0.03, 0.98);
-		       // -o-transition-delay: 0.25s;
-		           transition: left .3s cubic-bezier(0, 0, 0.03, 0.98);
-		         //  transition-delay: 0.25s;
 		}
 	}
 
