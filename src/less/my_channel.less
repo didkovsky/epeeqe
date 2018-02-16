@@ -30,7 +30,6 @@
     padding: 24px 16px;
 
     .header-description {
-
       &:after {
         content: '';
         display: block;
@@ -42,6 +41,38 @@
       .header-ava {
         float: left;
         width: 128px;
+        border-radius: 64px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+          .ava-cover {
+            display: block;
+          }
+        }
+
+        .ava-cover {
+          display: none;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, .5);
+
+          i {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            top: 50%;
+            margin-top: -12px;
+            left: 50%;
+            margin-left: -12px;
+          }
+
+          i::before {
+            color: @white;
+          }
+        }
 
         img {
           width: 128px;
@@ -59,9 +90,19 @@
           margin-top: 0;
         }
 
-        .subscribers {
-          color: @gray;
+        .header-nav {
+          margin-bottom: 16px;
         }
+      }
+    }
+
+    .header-subs {
+      text-align: center;
+      float: right;
+
+      .subscribers {
+        font-size: 24px;
+        color: @gray;
       }
     }
   }

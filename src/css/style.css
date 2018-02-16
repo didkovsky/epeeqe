@@ -6776,6 +6776,32 @@ select.selectpicker {
 .mc-header .header-card .header-description .header-ava {
   float: left;
   width: 128px;
+  border-radius: 64px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.mc-header .header-card .header-description .header-ava:hover .ava-cover {
+  display: block;
+}
+.mc-header .header-card .header-description .header-ava .ava-cover {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.mc-header .header-card .header-description .header-ava .ava-cover i {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  margin-top: -12px;
+  left: 50%;
+  margin-left: -12px;
+}
+.mc-header .header-card .header-description .header-ava .ava-cover i::before {
+  color: #fff;
 }
 .mc-header .header-card .header-description .header-ava img {
   width: 128px;
@@ -6790,7 +6816,15 @@ select.selectpicker {
 .mc-header .header-card .header-description .header-content h2 {
   margin-top: 0;
 }
-.mc-header .header-card .header-description .header-content .subscribers {
+.mc-header .header-card .header-description .header-content .header-nav {
+  margin-bottom: 16px;
+}
+.mc-header .header-card .header-subs {
+  text-align: center;
+  float: right;
+}
+.mc-header .header-card .header-subs .subscribers {
+  font-size: 24px;
   color: #bababa;
 }
 .navbar-ep {
