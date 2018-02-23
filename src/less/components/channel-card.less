@@ -1,0 +1,40 @@
+.channel-card {
+  background-color: @white;
+  border-radius: @border-radius-base;
+  margin-bottom: 20px;
+  padding: 16px;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+  }
+
+  .channel-img {
+    position: relative;
+    float: left;
+
+    img {
+      width: 128px;
+      height: 128px;
+      border-radius: 64px;
+    }
+  }
+
+  .channel-card-content {
+    width: ~"calc(100% - 132px)";
+    position: relative;
+    float: left;
+    padding-left: 16px;
+
+    .channel-name {
+      margin-top: 8px;
+    }
+
+    .channel-description {
+      color: @gray;
+    }
+  }
+}

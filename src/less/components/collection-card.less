@@ -1,0 +1,52 @@
+.collection-card {
+  background-color: @white;
+  border-radius: @border-radius-base;
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  .collection-card-img {
+    height: 250px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .collection-card-content {
+    padding: 16px;
+
+    .collection-card-title {
+
+    }
+
+    .posts-number {
+      color: @gray;
+      display: inline-block;
+    }
+
+    .date {
+      color: @gray;
+      display: inline-block;
+    }
+
+    .number {
+      color: @gray-dark;
+      margin-left: 8px;
+      margin-right: 16px;
+    }
+
+    .btn-group {
+      display: block;
+
+      &::after {
+        content: '';
+        width: 0;
+        height: 0;
+        display: block;
+        clear: both;
+      }
+    }
+  }
+}

@@ -8843,6 +8843,80 @@ yx-axis
 .public-card .pc-footer a i {
   margin-right: 12px;
 }
+.channel-card {
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 16px;
+}
+.channel-card::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+.channel-card .channel-img {
+  position: relative;
+  float: left;
+}
+.channel-card .channel-img img {
+  width: 128px;
+  height: 128px;
+  border-radius: 64px;
+}
+.channel-card .channel-card-content {
+  width: calc(100% - 132px);
+  position: relative;
+  float: left;
+  padding-left: 16px;
+}
+.channel-card .channel-card-content .channel-name {
+  margin-top: 8px;
+}
+.channel-card .channel-card-content .channel-description {
+  color: #bababa;
+}
+.collection-card {
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.collection-card .collection-card-img {
+  height: 250px;
+  overflow: hidden;
+}
+.collection-card .collection-card-img img {
+  width: 100%;
+  height: auto;
+}
+.collection-card .collection-card-content {
+  padding: 16px;
+}
+.collection-card .collection-card-content .posts-number {
+  color: #bababa;
+  display: inline-block;
+}
+.collection-card .collection-card-content .date {
+  color: #bababa;
+  display: inline-block;
+}
+.collection-card .collection-card-content .number {
+  color: #222;
+  margin-left: 8px;
+  margin-right: 16px;
+}
+.collection-card .collection-card-content .btn-group {
+  display: block;
+}
+.collection-card .collection-card-content .btn-group::after {
+  content: '';
+  width: 0;
+  height: 0;
+  display: block;
+  clear: both;
+}
 .comment-section .comment-section-header {
   padding-left: 16px;
 }
