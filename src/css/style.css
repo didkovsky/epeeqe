@@ -6839,7 +6839,7 @@ select.selectpicker {
   border-radius: 0;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
   border: none;
-  padding-top: 12px;
+  padding-top: 5px;
   z-index: 700;
 }
 .navbar-ep .top-line {
@@ -7020,6 +7020,7 @@ select.selectpicker {
 }
 .navbar-ep .search-group {
   border-bottom: #bababa 1px solid;
+  margin-top: 8px;
 }
 .navbar-ep .search-group .form-control {
   border-radius: 0;
@@ -7049,6 +7050,9 @@ select.selectpicker {
   display: none;
   height: 53px;
   background: #fff;
+}
+.navbar-ep .navbar-mobile-search .search-group {
+  margin-top: 0;
 }
 .navbar-ep .navbar-mobile-search .close-mobile-search {
   position: absolute;
