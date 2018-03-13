@@ -90,6 +90,10 @@
   .pc-footer {
     padding: 16px;
 
+   [class^="col-"], [class*=" col-"] {
+     padding: 0;
+   }
+
     &::after {
       content: '';
       display: block;
@@ -103,7 +107,7 @@
       text-align: center;
       display: block;
       float: left;
-      width: 25%;
+      //width: 25%;
 
       i {
         margin-right: 12px;

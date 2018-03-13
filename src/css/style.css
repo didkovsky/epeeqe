@@ -8826,6 +8826,10 @@ yx-axis
 .public-card .pc-footer {
   padding: 16px;
 }
+.public-card .pc-footer [class^="col-"],
+.public-card .pc-footer [class*=" col-"] {
+  padding: 0;
+}
 .public-card .pc-footer::after {
   content: '';
   display: block;
@@ -8838,7 +8842,6 @@ yx-axis
   text-align: center;
   display: block;
   float: left;
-  width: 25%;
 }
 .public-card .pc-footer a i {
   margin-right: 12px;
