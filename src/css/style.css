@@ -6827,6 +6827,12 @@ select.selectpicker {
   font-size: 24px;
   color: #bababa;
 }
+.nav-mc {
+  margin-top: 40px;
+}
+.tab-content-mc {
+  padding: 40px 0;
+}
 .navbar-ep {
   width: 100%;
   background-color: #fff;
