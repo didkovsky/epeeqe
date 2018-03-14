@@ -253,3 +253,43 @@ input[type="checkbox"], input[type="radio"] {
 .no-padding {
 	padding: 0;
 }
+
+.sub-section {
+  .section-header {
+    padding: 20px 0;
+
+    h4 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .section-footer {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: @gray-ef 1px solid;
+  }
+
+  .card-spoiler {
+    height: 617px;
+    overflow: hidden;
+  }
+
+  .close-spoiler {
+    display: none;
+  }
+
+  &.open {
+    .card-spoiler {
+      height: auto;
+    }
+
+    .close-spoiler {
+      display: inline-block;
+    }
+
+    .open-spoiler {
+      display: none;
+    }
+  }
+}
