@@ -8806,12 +8806,18 @@ yx-axis
   margin-left: 12px;
   line-height: 40px;
 }
+.public-card .pc-header .navigation .btn-icon:hover {
+  color: #bababa;
+}
 .public-card .pc-header .navigation .arrow-right {
   width: 200px;
   margin-left: -156px;
 }
 .public-card .pc-header .navigation .icon-ei-plus {
   color: #FB2775;
+}
+.public-card .pc-header .navigation .icon-ei-plus:hover {
+  color: #8E36AB;
 }
 .public-card .pc-content .description {
   padding: 8px 16px;
@@ -8849,6 +8855,9 @@ yx-axis
   text-align: center;
   display: block;
   float: left;
+}
+.public-card .pc-footer a:hover {
+  color: #bababa;
 }
 .public-card .pc-footer a i {
   margin-right: 12px;
