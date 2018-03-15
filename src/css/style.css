@@ -8862,6 +8862,9 @@ yx-axis
 .public-card .pc-footer a:hover {
   color: #bababa;
 }
+.public-card .pc-footer a.active {
+  color: #bababa;
+}
 .public-card .pc-footer a i {
   margin-right: 12px;
 }
