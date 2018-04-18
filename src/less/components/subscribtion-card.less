@@ -1,0 +1,71 @@
+.subscribtion-card {
+  padding: 16px;
+  background: @white;
+  border-radius: @border-radius-base;
+  margin-bottom: 20px;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+  }
+
+  .subscribtion-img {
+    float: left;
+
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 32px;
+    }
+  }
+
+  .subscribtion-description {
+    float: left;
+    width: ~"calc(100% - 256px)";
+    padding-left: 16px;
+
+    .name {
+      font-size: 18px;
+      font-weight: 600;
+      color: @gray-dark;
+
+      &:hover {
+        color: @gray;
+      }
+    }
+
+    .subscribers {
+      color: @gray;
+    }
+
+    .description-text {
+      color: @gray-dark;
+      margin-top: 16px;
+    }
+  }
+
+  .subscribtion-nav {
+    float: right;
+
+    .btn {
+      width: 128px;
+    }
+  }
+}
+
+@media (max-width: @screen-md) {
+  .subscribtion-card {
+    .subscribtion-description {
+      width:  ~"calc(100% - 96px)";
+    }
+
+    .subscribtion-nav {
+      float: left;
+      margin-left: 80px;
+      margin-top: 16px;
+    }
+  }
+}

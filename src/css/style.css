@@ -9110,3 +9110,60 @@ yx-axis
   font-size: 16px;
   line-height: 16px;
 }
+.subscribtion-card {
+  padding: 16px;
+  background: #fff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.subscribtion-card:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+.subscribtion-card .subscribtion-img {
+  float: left;
+}
+.subscribtion-card .subscribtion-img img {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+}
+.subscribtion-card .subscribtion-description {
+  float: left;
+  width: calc(100% - 256px);
+  padding-left: 16px;
+}
+.subscribtion-card .subscribtion-description .name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+}
+.subscribtion-card .subscribtion-description .name:hover {
+  color: #bababa;
+}
+.subscribtion-card .subscribtion-description .subscribers {
+  color: #bababa;
+}
+.subscribtion-card .subscribtion-description .description-text {
+  color: #222;
+  margin-top: 16px;
+}
+.subscribtion-card .subscribtion-nav {
+  float: right;
+}
+.subscribtion-card .subscribtion-nav .btn {
+  width: 128px;
+}
+@media (max-width: 992px) {
+  .subscribtion-card .subscribtion-description {
+    width: calc(100% - 96px);
+  }
+  .subscribtion-card .subscribtion-nav {
+    float: left;
+    margin-left: 80px;
+    margin-top: 16px;
+  }
+}
