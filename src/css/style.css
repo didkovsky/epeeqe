@@ -6830,6 +6830,15 @@ select.selectpicker {
 .nav-mc {
   margin-top: 40px;
 }
+.nav-sub-tabs {
+  margin-bottom: 20px;
+}
+.nav-sub-tabs li.active > a {
+  background-color: #8E36AB !important;
+}
+.nav-sub-tabs li.active > a:hover {
+  background-color: #8E36AB !important;
+}
 .tab-content-mc {
   padding-top: 20px;
 }
