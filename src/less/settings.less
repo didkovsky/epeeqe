@@ -1,0 +1,48 @@
+.user-settings {
+
+  .ava-holder {
+    padding-top: 64px;
+    position: relative;
+
+    .ava {
+      border-radius: 16px;
+      overflow: hidden;
+      display: block;
+      //margin: auto;
+      width: 200px;
+      height: 200px;
+    }
+
+    .ava-holder-nav {
+      position: absolute;
+      height: 40px;
+      width: 200px;
+      margin-top: -48px;
+      top: 100%;
+      text-align: center;
+
+      a {
+        display: inline-block;
+        color: @white;
+        padding: 8px;
+        margin: 0 4px;
+        background: rgba(0,0,0,.5);
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+
+        i:before {
+          font-size: 16px!important;
+          line-height: 16px;
+          opacity: .85;
+        }
+
+        &:hover {
+          i:before {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

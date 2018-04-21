@@ -6214,7 +6214,7 @@ input[type="radio"] {
 }
 [class^="icon-"],
 [class*=" icon-"] {
-  line-height: 24px!important;
+  line-height: 24px;
   height: 24px;
   display: inline-block;
   position: relative;
@@ -6737,6 +6737,43 @@ select.selectpicker {
 }
 .recomended-channels .content .name {
   float: left;
+}
+.user-settings .ava-holder {
+  padding-top: 64px;
+  position: relative;
+}
+.user-settings .ava-holder .ava {
+  border-radius: 16px;
+  overflow: hidden;
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+.user-settings .ava-holder .ava-holder-nav {
+  position: absolute;
+  height: 40px;
+  width: 200px;
+  margin-top: -48px;
+  top: 100%;
+  text-align: center;
+}
+.user-settings .ava-holder .ava-holder-nav a {
+  display: inline-block;
+  color: #fff;
+  padding: 8px;
+  margin: 0 4px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+.user-settings .ava-holder .ava-holder-nav a i:before {
+  font-size: 16px!important;
+  line-height: 16px;
+  opacity: .85;
+}
+.user-settings .ava-holder .ava-holder-nav a:hover i:before {
+  opacity: 1;
 }
 .mc-header {
   position: relative;
@@ -8775,7 +8812,7 @@ yx-axis
 }
 .form-section {
   margin-top: 15px;
-  padding: 20px 16px 0 16px;
+  padding: 20px 0 0 16px;
   border-top: #f5f5f5 1px solid;
 }
 .form-section .form-section-header {
