@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Settings</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.min.css" media="screen">
+</head>
+<body>
+
+	<!-- Navbar
+			================================================== -->
+	<nav class="navbar navbar-ep">
+		<div class="container-fluid">
+			<div class="top-line">
+				<div class="navbar-ep-content">
+					<div class="row">
+						<div class="col-md-5 col-sm-6 col-xs-7">
+							<div class="nav-group">
+								<a href="#" class="nav-el menu-button menu-control">
+									<i class="icon-ei-menu"></i>
+								</a>
+								<a href="#" class="nav-el logo">
+									<img src="../img/logo.png" alt="">
+								</a>
+								<a href="#" class="nav-el add-button tooltip-hover" data-toggle="tooltip" data-placement="right" title="Add content">
+									<i class="icon-ei-plus"></i>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-5 col-md-push-4 col-lg-push-4">
+							<div class="nav-group">
+								<div class="btn-group nav-el nav-el-right">
+									<a href="#" data-toggle="dropdown">
+										<img src="../img/ava.png" alt="">
+									</a>
+									<ul class="dropdown-menu arrow-top arrow-right noclose" role="menu">
+										<li>
+											<a class="d-m-line" href="#">
+												<div class="icon">
+													<img class="lg" src="../img/ava.png" alt="">
+												</div>
+												<div class="content">
+													Zeniagromoff <br>
+													<span class="strong">RegardelessFiles</span>
+													<p class="annotation">
+														Subscribers
+													</p>
+													<span class="strong">359</span>
+												</div>
+											</a>
+										</li>
+										<li class="divider"></li>
+										<li class="spoiler no-padding">
+											<div class="spoiler-control">Switch channel
+											<i class="pull-right icon-ei-chevron-right-sm"></i></div>
+											<div class="spoiler-content">
+												<ul>
+													<li>
+														<a href="#">Channel 1</a>
+													</li>
+													<li>
+														<a href="#">Channel 1</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a class="d-m-line sm" href="#">
+												<div class="icon">
+													<i class="icon-ei-star"></i>
+												</div>
+												<div class="content in-line">
+													My interests
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="d-m-line sm" href="#">
+												<div class="icon">
+													<i class="icon-ei-table"></i>
+												</div>
+												<div class="content in-line">
+													My Channels
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="d-m-line sm" href="#">
+												<div class="icon">
+													<i class="icon-ei-card"></i>
+												</div>
+												<div class="content in-line">
+													Publisher Manager
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="btn btn-primary">Create channel</a>
+										</li>
+										<li>
+											<a href="#">Bind Channel</a>
+										</li>
+										<li>
+											<a href="#">Log Out</a>
+										</li>
+									</ul>
+								</div>
+								<div class="btn-group nav-el nav-el-right alert-pic">
+									<a href="#" data-toggle="dropdown">
+										<i class="icon-ei-bell"></i>
+										<div class="badge badge-nav badge-primary">5</div>
+									</a>
+									<ul class="dropdown-menu arrow-top arrow-right" role="menu">
+										<li>
+											<a class="d-m-line" href="#">
+												<div class="icon">
+													<i class="icon-ei-up"></i>
+												</div>
+												<div class="content">
+													<span class="strong">5 people</span> upvoted <br> your post.
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="d-m-line" href="#">
+												<div class="icon">
+													<img src="../img/ava.png" alt="">
+												</div>
+												<div class="content">
+													<span class="strong">Some name</span><br>
+													Replied to your post.
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="d-m-line" href="#">
+												<div class="icon">
+													<img src="../img/ava.png" alt="">
+												</div>
+												<div class="content">
+													<span class="strong">Some name</span><br>
+													Replied to your post.
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="d-m-line" href="#">
+												<div class="icon">
+													<img src="../img/ava.png" alt="">
+												</div>
+												<div class="content">
+													<span class="strong">Some name</span><br>
+													Replied to your post.
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="d-m-line" href="#">
+												<div class="icon">
+													<img src="../img/ava.png" alt="">
+												</div>
+												<div class="content">
+													<span class="strong">Some name</span><br>
+													Replied to your post.
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<a href="javascript:void(0);" id="mobile-search" class="nav-el nav-el-right search-pic visible-sm visible-xs">
+									<i class="icon-ei-search"></i>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4 hidden-xs hidden-sm col-sm-pull-4 col-md-pull-4 col-lg-pull-4">
+							<div class="input-group search-group">
+								<span class="input-group-addon">
+									<i class="icon-ei-search"></i>
+								</span>
+								<input type="text" class="form-control" placeholder="search">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="navbar-mobile-search">
+					<div class="input-group search-group">
+						<span class="input-group-addon">
+							<i class="icon-ei-search"></i>
+						</span>
+						<input class="form-control" placeholder="search" type="text">
+					</div>
+					<a href="#" class="close-mobile-search" id="close-search">
+						<i class="icon-ei-cross"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Silde menu
+			================================================== -->
+	<div class="nav-sidebar collapsed">
+		<div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+			<ul class="nav">
+				<li>
+					<a href="#" class="item">
+						<div class="icon"><i class="icon-ei-badge"></i></div>
+						<div class="content">Recomended</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="item">
+						<div class="icon"><i class=" icon-ei-fire"></i></div>
+						<div class="content">Hot</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="item">
+						<div class="icon"><i class="icon-ei-table"></i></div>
+						<div class="content">My channel</div>
+					</a>
+				</li>
+				<li class="divider"></li>
+				<li class="spoiler">
+					<a href="javascript: void(0);" class="control">Subscriptions <i class="icon-ei-chevron-down-sm"></i></a>
+					<a href="#" class="control-collapsed">s</a>
+					<ul>
+						<li>
+							<a href="#" class="item">
+								<div class="icon"><img src="../img/ava.png" alt=""></div>
+								<div class="content">Behance featured projects</div>
+								 <span class="badge">12</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<div class="icon"><img src="../img/ava.png" alt=""></div>
+								<div class="content">Behance featured projects</div>
+								<span class="badge">9</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<div class="icon"><img src="../img/ava.png" alt=""></div>
+								<div class="content">Behance featured projects</div>
+								<span class="badge">1</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<div class="icon"><img src="../img/ava.png" alt=""></div>
+								<div class="content">Behance featured projects</div>
+								<span class="badge">126</span>
+							</a>
+						</li>
+					</ul>
+					<a href="#" class="show-more">Show more</a>
+				</li>
+				<li class="divider collapsed-hidden"></li>
+				<li class="collapsed-hidden"><span class="item">All channels</span></li>
+				<li class="divider"></li>
+				<li class="spoiler">
+					<a href="javascript: void(0);" class="control">Collections <i class="icon-ei-chevron-down-sm"></i></a>
+					<a href="#" class="control-collapsed">C</a>
+					<ul>
+						<li>
+							<a href="#" class="item">
+								<div class="icon"><i class="icon-ei-plus"></i></div>
+								<div class="content">Create collection</div>
+								<span class="badge">9</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<div class="icon"><img src="../img/ava.png" alt=""></div>
+								<div class="content">Behance featured projects</div>
+								<span class="badge">1</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<div class="icon"><img src="../img/ava.png" alt=""></div>
+								<div class="content">Behance featured projects</div>
+								<span class="badge">2</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item">
+								<div class="icon"><img src="../img/ava.png" alt=""></div>
+								<div class="content">Behance featured projects</div>
+								<span class="badge">56</span>
+							</a>
+						</li>
+					</ul>
+					<a href="#" class="show-more">Show more</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="#" class="item">
+						<div class="icon"><i class="icon-ei-up"></i></div>
+						<div class="content">Voted</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="item">
+						<div class="icon"><i class="icon-ei-flag"></i></div>
+						<div class="content">Watch later</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="item">
+						<div class="icon"><i class="icon-ei-stack"></i></div>
+						<div class="content">History</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+  <!-- User settings
+			================================================== -->
+  <section class="user-settings container">
+    <div class="well no-padding">
+			<div class="row">
+				<div class="col-lg-7">
+					<form action="/" method="POST" class="form-horizontal">
+						<fieldset class="form-section">
+							<div class="form-group">
+								<legend class="form-section-header col-lg-10 col-lg-offset-2">Account data</legend>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-2 control-label" for="st-username">Username</label>
+								<div class="col-lg-10">
+									<input class="form-control" type="text" id="st-username" name="st-username">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-2 control-label" for="st-email">Email</label>
+								<div class="col-lg-10">
+									<input class="form-control" type="email" id="st-email" name="st-email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-2 control-label" for="st-phone">Phone</label>
+								<div class="col-lg-10">
+									<input class="form-control" type="tel" id="st-phone" name="st-phone">
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="form-section">
+							<div class="form-group">
+								<legend class="form-section-header col-lg-10 col-lg-offset-2">Pesonal information</legend>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-2 control-label" for="st-full-name">Full name</label>
+								<div class="col-lg-10">
+									<input class="form-control" type="text" id="st-full-name" name="st-full-name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-2 control-label" for="st-country">Gendeer</label>
+								<div class="col-lg-10">
+									<select class="selectpicker" name="st-gender">
+										<option value="1">Male</option>
+										<option value="2">Female</option>
+										<option value="3">I don't know</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-2 control-label" for="st-country">Country</label>
+								<div class="col-lg-10">
+									<select class="selectpicker" name="st-country" data-live-search="true">
+										<option data-tokens="USA">United States</option>
+										<option data-tokens="Ukraine">Ukraine</option>
+										<option data-tokens="Israel">Israel</option>
+									</select>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="form-section">
+							<div class="form-group">
+								<legend class="form-section-header col-lg-10 col-lg-offset-2">Channel settings</legend>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-2 control-label" for="st-channel-address">Channel address</label>
+								<div class="col-lg-10">
+									<input class="form-control" type="text" id="st-channel-address" placeholder="http://" name="st-channel-address">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-2 control-label" for="st-channel-description">Channel description</label>
+								<div class="col-lg-10">
+									<textarea class="form-control" type="text" id="st-channel-description" name="st-channel-description"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-2 control-label" for="st-languages">Languages</label>
+								<div class="col-lg-10">
+									<div id="st-languages" class="tag-holder">
+										<div class="btn-group">
+											<button data-toggle="dropdown" class="add">+</button>
+											<ul class="dropdown-menu arrow-top arrow-left" role="menu">
+												<li class="form-group"><input placeholder="Search categorie..." class="form-control input-sm" type="text"></li>
+												<li><a href="#">Item 1</a></li>
+												<li><a href="#">Item 2</a></li>
+												<li><a href="#">Item 3</a></li>
+												<li><a href="#">Item 4</a></li>
+												<li><a href="#">Item 5</a></li>
+												<li><a href="#">Item 6</a></li>
+											</ul>
+										</div>
+										<span class="tag">Russian <button class="rm">×</button></span>
+										<span class="tag">English <button class="rm">×</button></span>
+										<span class="tag">Spanish <button class="rm">×</button></span>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="form-section">
+							<div class="form-group">
+								<legend class="form-section-header col-lg-10 col-lg-offset-2">Change password</legend>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-2 control-label" for="st-old-password">Your password</label>
+								<div class="col-lg-10">
+									<input class="form-control" type="password" id="st-old-password" name="st-old-password">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-2 control-label" for="st-new-password">New password</label>
+								<div class="col-lg-10">
+									<input class="form-control" type="password" id="st-new-password" name="st-new-password">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-2 control-label" for="st-confirm-password">Confirm password</label>
+								<div class="col-lg-10">
+									<input class="form-control" type="password" id="st-confirm-password" name="st-confirm-password">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-10 col-lg-offset-2">
+									<button class="btn btn-primary">Change password</button>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="form-section">
+							<div class="form-group">
+								<legend class="form-section-header col-lg-10 col-lg-offset-2">Users can see on my channel</legend>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-10 col-lg-offset-2">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="st-show-likes"> Liked
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="st-show-collections"> Collections
+										</label>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="form-section">
+							<div class="form-group">
+								<legend class="form-section-header col-lg-10 col-lg-offset-2">Notifications</legend>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-10 col-lg-offset-2">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="st-not-posts"> Posts
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="st-not-comments"> Comments
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="st-not-upvotes"> Upvotes
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="st-not-email"> Send me email notifications
+										</label>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="form-section">
+							<div class="form-group">
+								<legend class="form-section-header col-lg-10 col-lg-offset-2">Send feedback</legend>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-10 col-lg-offset-2">
+									<button class="btn btn-primary">Contact us</button>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="form-section">
+							<div class="form-group">
+								<legend class="form-section-header col-lg-10 col-lg-offset-2">Delete channel</legend>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-10 col-lg-offset-2">
+									<button class="btn btn-primary">Delete channel</button>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="form-section">
+							<div class="form-group">
+								<legend class="form-section-header col-lg-10 col-lg-offset-2">Delete account</legend>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-10 col-lg-offset-2">
+									<button class="btn btn-primary">Delete account</button>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<div class="col-lg-5">
+
+				</div>
+			</div>
+    </div>
+  </section>
+  <script src="js/libs.min.js"></script>
+</body>
+</html>
