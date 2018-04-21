@@ -6738,6 +6738,9 @@ select.selectpicker {
 .recomended-channels .content .name {
   float: left;
 }
+.user-settings .well {
+  padding: 20px 0;
+}
 .user-settings .ava-holder {
   padding-top: 64px;
   position: relative;
