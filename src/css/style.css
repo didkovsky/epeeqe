@@ -8784,6 +8784,33 @@ yx-axis
   font-size: 16px;
   font-weight: 600;
 }
+.form-map {
+  background-color: #F9F9F9;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.form-map:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+.form-map .map-value-name {
+  width: 50%;
+  padding: 12px;
+  float: left;
+  line-height: 30px;
+  font-weight: 600;
+  border-right: #fff 1px solid;
+}
+.form-map .map-value {
+  width: 50%;
+  padding: 12px;
+  float: left;
+  text-align: right;
+}
 .public-card {
   background-color: #fff;
   border-radius: 4px;
