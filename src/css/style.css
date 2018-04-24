@@ -8851,6 +8851,9 @@ yx-axis
   float: left;
   text-align: right;
 }
+.form-map .map-value .btn {
+  width: 128px;
+}
 .public-card {
   background-color: #fff;
   border-radius: 4px;
