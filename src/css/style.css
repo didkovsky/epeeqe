@@ -8845,6 +8845,26 @@ yx-axis
   font-weight: 600;
   border-right: #fff 1px solid;
 }
+.form-map .map-value-name .social:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+.form-map .map-value-name .social .ico {
+  float: left;
+  margin-right: 12px;
+}
+.form-map .map-value-name .social .ico img {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.form-map .map-value-name .social .title {
+  float: left;
+}
 .form-map .map-value {
   width: 50%;
   padding: 12px;
