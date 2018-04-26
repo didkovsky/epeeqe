@@ -6012,6 +6012,9 @@ input[type="radio"] {
 .btn:active {
   box-shadow: none;
 }
+.nav a {
+  font-weight: 600;
+}
 .btn-group.open .dropdown-toggle {
   box-shadow: none;
 }
