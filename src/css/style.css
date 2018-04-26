@@ -6745,7 +6745,7 @@ select.selectpicker {
   position: relative;
   width: 128px;
   height: 128px;
-  border-radius: 16px;
+  border-radius: 8px;
   overflow: hidden;
 }
 .user-settings .ava-holder .ava img {
