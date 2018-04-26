@@ -342,8 +342,8 @@
 											<img class="ava" src="../img/ava.png" alt="">
 										</div>
 										<nav class="ava-holder-nav">
-											<a href="#" class="ediit"><i class="icon-ei-comment"></i></a>
-											<a href="#" class="delete"><i class="icon-ei-bell"></i></a>
+											<a href="#popup-image" data-toggle="modal" class="ediit"><i class="icon-ei-comment"></i></a>
+											<a href="#popup-delete" data-toggle="modal" class="delete"><i class="icon-ei-bell"></i></a>
 										</nav>
 									</div>
 								</div>
@@ -410,8 +410,8 @@
 											<img src="../img/ava.png" alt="">
 										</div>
 										<nav class="ava-holder-nav">
-											<a href="#" class="ediit"><i class="icon-ei-comment"></i></a>
-											<a href="#" class="delete"><i class="icon-ei-bell"></i></a>
+											<a href="#popup-image" data-toggle="modal" class="ediit"><i class="icon-ei-comment"></i></a>
+											<a href="#popup-delete" data-toggle="modal" class="delete"><i class="icon-ei-bell"></i></a>
 										</nav>
 									</div>
 								</div>
@@ -424,8 +424,8 @@
 											<img src="../img/bg.jpg" alt="">
 										</div>
 										<nav class="ava-holder-nav">
-											<a href="#" class="ediit"><i class="icon-ei-comment"></i></a>
-											<a href="#" class="delete"><i class="icon-ei-bell"></i></a>
+											<a href="#popup-image" data-toggle="modal" class="ediit"><i class="icon-ei-comment"></i></a>
+											<a href="#popup-delete" data-toggle="modal" class="delete"><i class="icon-ei-bell"></i></a>
 										</nav>
 									</div>
 								</div>
@@ -690,6 +690,35 @@
 				<div class="modal-footer">
 					<div class="form-group">
 						<div class="btn btn-primary">Send</div>
+						<div data-dismiss="modal" aria-hidden="true" class="btn btn-default">Cancel</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Upload image
+	================================================== -->
+	<div class="modal fade" id="popup-image">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4>Send feedback</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<div class="drop-field">
+							<i class="icon-ei-star"></i>
+							<h4>Drop file to upload</h4>
+						</div>
+					</div>
+					<div class="form-group">
+						<button class="btn btn-xs btn-primary">choose file</button>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="form-group">
+						<div class="btn btn-primary">Upload</div>
 						<div data-dismiss="modal" aria-hidden="true" class="btn btn-default">Cancel</div>
 					</div>
 				</div>
