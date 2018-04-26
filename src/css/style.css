@@ -6799,6 +6799,33 @@ select.selectpicker {
   overflow: hidden;
   z-index: 0;
 }
+.mc-header .c-cover .c-cover-nav {
+  position: absolute;
+  width: 128px;
+  left: 100%;
+  top: 16px;
+  margin-left: -128px;
+  text-align: center;
+}
+.mc-header .c-cover .c-cover-nav a {
+  display: inline-block;
+  color: #fff;
+  padding: 8px;
+  margin: 0 4px;
+  background: rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+.mc-header .c-cover .c-cover-nav a i:before {
+  font-size: 16px!important;
+  line-height: 16px;
+  opacity: .85;
+}
+.mc-header .c-cover .c-cover-nav a:hover i:before {
+  opacity: 1;
+}
 .mc-header .c-cover .d-layer {
   position: absolute;
   width: 100%;
