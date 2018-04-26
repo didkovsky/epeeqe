@@ -6877,6 +6877,10 @@ select.selectpicker {
 .nav-mc {
   margin-top: 40px;
 }
+.nav-mc a {
+  font-weight: 600;
+  text-transform: uppercase;
+}
 .nav-sub-tabs {
   margin-bottom: 20px;
 }
