@@ -622,7 +622,7 @@
 							</div>
 							<div class="form-group">
 								<div class="col-lg-8 col-lg-offset-2">
-									<button class="btn btn-primary">Contact us</button>
+									<a href="#popup-feedback" data-toggle="modal" class="btn btn-primary">Contact us</a>
 								</div>
 							</div>
 						</fieldset>
@@ -666,6 +666,30 @@
 				<div class="modal-footer">
 					<div class="form-group">
 						<div class="btn btn-primary">Delete</div>
+						<div data-dismiss="modal" aria-hidden="true" class="btn btn-default">Cancel</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Send feedback
+	================================================== -->
+	<div class="modal fade" id="popup-feedback">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4>Send feedback</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="#feedback-area"></label>
+						<textarea name="feedback-area" id="#feedback-area" rows="10" class="form-control"></textarea>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="form-group">
+						<div class="btn btn-primary">Send</div>
 						<div data-dismiss="modal" aria-hidden="true" class="btn btn-default">Cancel</div>
 					</div>
 				</div>
