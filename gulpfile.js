@@ -30,7 +30,7 @@ gulp.task('js-compile', function() {
 		'src/scripts/*.js',
 		'src/scripts/**/*.js'])
 		.pipe(concat('libs.min.js'))
-		.pipe(uglify())
+		//.pipe(uglify())
 		.pipe(gulp.dest('src/js'));
 });
 

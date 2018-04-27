@@ -6890,6 +6890,18 @@ select.selectpicker {
   float: left;
   padding-left: 24px;
 }
+.mc-header .header-card .header-description .header-content .description {
+  position: relative;
+}
+.mc-header .header-card .header-description .header-content .description .form-control {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  padding: 0;
+  background: #fff;
+}
 .mc-header .header-card .header-description .header-content h2 {
   margin-top: 0;
 }
