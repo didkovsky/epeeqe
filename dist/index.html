@@ -8,196 +8,325 @@
     <link rel="stylesheet" href="css/style.min.css" media="screen">
   </head>
   <body>
+    <!-- Silde menu
+        ================================================== -->
+    <div class="nav-sidebar collapsed">
+      <div class="mCustomScrollbar" data-mcs-theme="minimal-dark">
+        <ul class="nav">
+          <li>
+            <a href="#" class="item">
+              <div class="icon"><i class="icon-ei-badge"></i></div>
+              <div class="content">Recomended</div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item">
+              <div class="icon"><i class=" icon-ei-fire"></i></div>
+              <div class="content">Hot</div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item">
+              <div class="icon"><i class="icon-ei-table"></i></div>
+              <div class="content">My channel</div>
+            </a>
+          </li>
+          <li class="divider"></li>
+          <li class="spoiler">
+            <a href="javascript: void(0);" class="control">Subscriptions <i class="icon-ei-chevron-down-sm"></i></a>
+            <a href="#" class="control-collapsed">s</a>
+            <ul>
+              <li>
+                <a href="#" class="item">
+                  <div class="icon"><img src="../img/ava.png" alt=""></div>
+                  <div class="content">Behance featured projects</div>
+                   <span class="badge">12</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="item">
+                  <div class="icon"><img src="../img/ava.png" alt=""></div>
+                  <div class="content">Behance featured projects</div>
+                  <span class="badge">9</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="item">
+                  <div class="icon"><img src="../img/ava.png" alt=""></div>
+                  <div class="content">Behance featured projects</div>
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="item">
+                  <div class="icon"><img src="../img/ava.png" alt=""></div>
+                  <div class="content">Behance featured projects</div>
+                  <span class="badge">126</span>
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="show-more">Show more</a>
+          </li>
+          <li class="divider collapsed-hidden"></li>
+          <li class="collapsed-hidden"><span class="item">All channels</span></li>
+          <li class="divider"></li>
+          <li class="spoiler">
+            <a href="javascript: void(0);" class="control">Collections <i class="icon-ei-chevron-down-sm"></i></a>
+            <a href="#" class="control-collapsed">C</a>
+            <ul>
+              <li>
+                <a href="#" class="item">
+                  <div class="icon"><i class="icon-ei-plus"></i></div>
+                  <div class="content">Create collection</div>
+                  <span class="badge">9</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="item">
+                  <div class="icon"><img src="../img/ava.png" alt=""></div>
+                  <div class="content">Behance featured projects</div>
+                  <span class="badge">1</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="item">
+                  <div class="icon"><img src="../img/ava.png" alt=""></div>
+                  <div class="content">Behance featured projects</div>
+                  <span class="badge">2</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="item">
+                  <div class="icon"><img src="../img/ava.png" alt=""></div>
+                  <div class="content">Behance featured projects</div>
+                  <span class="badge">56</span>
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="show-more">Show more</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#" class="item">
+              <div class="icon"><i class="icon-ei-up"></i></div>
+              <div class="content">Voted</div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item">
+              <div class="icon"><i class="icon-ei-flag"></i></div>
+              <div class="content">Watch later</div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item">
+              <div class="icon"><i class="icon-ei-stack"></i></div>
+              <div class="content">History</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-      <!-- Navbar
-      ================================================== -->
-  	  <nav class="navbar navbar-ep">
-  		<div class="container-fluid">
-  			<div class="row">
-  				<div class="col-md-5 col-sm-6 col-xs-6">
-  					<div class="nav-group">
-  						<a href="#" class="nav-el menu-button">
-  							<i class="icon-ei-menu"></i>
-  						</a>
-  						<a href="#" class="nav-el logo hidden-xs">
-  							<img src="../img/logo.png" alt="">
-  						</a>
-  						<a href="#" class="nav-el logo logo-xs visible-xs">
-  							<img src="../img/logo_small.png" alt="">
-  						</a>
-  						<a href="#" class="nav-el add-button tooltip-hover" data-toggle="tooltip" data-placement="right" title="Add content">
-  							<i class="icon-ei-plus"></i>
-  						</a>
-  					</div>
-  				</div>
-  				<div class="col-md-3 col-sm-6 col-xs-6 col-md-push-4 col-lg-push-4">
-  					<div class="nav-group">
-  						<div class="btn-group nav-el nav-el-right">
-  							<a href="#" data-toggle="dropdown">
-  								<img src="../img/ava.png" alt="">
-  							</a>
-  							<ul class="dropdown-menu arrow-top arrow-right" role="menu">
-  								<li>
-  									<a class="d-m-line" href="#">
-  										<div class="icon">
-  											<img class="lg" src="../img/ava.png" alt="">
-  										</div>
-  										<div class="content">
-  											Zeniagromoff <br>
-  											<span class="strong">RegardelessFiles</span>
-  											<p class="annotation">
-  												Subscribers
-  											</p>
-  											<span class="strong">359</span>
-  										</div>
-  									</a>
-  								</li>
-  								<li class="divider"></li>
-  								<li>
-  									<a class="d-m-line" href="#">
-  										<div class="icon">
-  											<img src="../img/ava.png" alt="">
-  										</div>
-  										<div class="content">
-  											<span class="annotation">lbigdan</span><br>
-  											<span class="strong">Самый сок</span><br>
-  											<span class="annotation">Subscribers: <br>
-  											69 543</span>
-  										</div>
-  									</a>
-  								</li>
-  								<li class="divider"></li>
-  								<li>
-  									<a class="d-m-line sm" href="#">
-  										<div class="icon">
-  											<i class="icon-ei-star"></i>
-  										</div>
-  										<div class="content in-line">
-  											My interests
-  										</div>
-  									</a>
-  								</li>
-  								<li>
-  									<a class="d-m-line sm" href="#">
-  										<div class="icon">
-  											<i class="icon-ei-table"></i>
-  										</div>
-  										<div class="content in-line">
-  											My Channels
-  										</div>
-  									</a>
-  								</li>
-  								<li>
-  									<a class="d-m-line sm" href="#">
-  										<div class="icon">
-  											<i class="icon-ei-card"></i>
-  										</div>
-  										<div class="content in-line">
-  											Publisher Manager
-  										</div>
-  									</a>
-  								</li>
-  								<li>
-  									<a href="#" class="btn btn-primary">Create channel</a>
-  								</li>
-  								<li>
-  									<a href="#">Bind Channel</a>
-  								</li>
-  								<li>
-  									<a href="#">Log Out</a>
-  								</li>
-  							</ul>
-  						</div>
-  						<div class="btn-group nav-el nav-el-right alert-pic">
-  							<a href="#" data-toggle="dropdown">
-  								<i class="icon-ei-bell"></i>
-  								<div class="badge badge-nav badge-primary">5</div>
-  							</a>
-  							<ul class="dropdown-menu arrow-top arrow-right" role="menu">
-  								<li>
-  									<a class="d-m-line" href="#">
-  										<div class="icon">
-  											<i class="icon-ei-up"></i>
-  										</div>
-  										<div class="content">
-  											<span class="strong">5 people</span> upvoted <br> your post.
-  										</div>
-  									</a>
-  								</li>
-  								<li>
-  									<a class="d-m-line" href="#">
-  										<div class="icon">
-  											<img src="../img/ava.png" alt="">
-  										</div>
-  										<div class="content">
-  											<span class="strong">Some name</span><br>
-  											Replied to your post.
-  										</div>
-  									</a>
-  								</li>
-  								<li>
-  									<a class="d-m-line" href="#">
-  										<div class="icon">
-  											<img src="../img/ava.png" alt="">
-  										</div>
-  										<div class="content">
-  											<span class="strong">Some name</span><br>
-  											Replied to your post.
-  										</div>
-  									</a>
-  								</li>
-  								<li>
-  									<a class="d-m-line" href="#">
-  										<div class="icon">
-  											<img src="../img/ava.png" alt="">
-  										</div>
-  										<div class="content">
-  											<span class="strong">Some name</span><br>
-  											Replied to your post.
-  										</div>
-  									</a>
-  								</li>
-  								<li>
-  									<a class="d-m-line" href="#">
-  										<div class="icon">
-  											<img src="../img/ava.png" alt="">
-  										</div>
-  										<div class="content">
-  											<span class="strong">Some name</span><br>
-  											Replied to your post.
-  										</div>
-  									</a>
-  								</li>
-  							</ul>
-  						</div>
-  						<div class="nav-el nav-el-right mobile-search-form input-group search-group input-group-sm">
-  							<input type="text" class="form-control">
-  						</div>
-  						<a href="javascript:void(0);" id="mobile-search" class="nav-el nav-el-right search-pic visible-sm visible-xs">
-  							<i class="icon-ei-search"></i>
-  						</a>
-  					</div>
-  				</div>
-  				<div class="col-md-4 hidden-xs hidden-sm col-sm-pull-4 col-md-pull-4 col-lg-pull-4">
-  					<div class="input-group search-group">
-  						<span class="input-group-addon">
-  							<i class="icon-ei-search"></i>
-  						</span>
-  						<input type="text" class="form-control" placeholder="search">
-  					</div>
-  				</div>
-  			</div>
-  			<div class="row">
-  				<div class="col-md-4 col-md-offset-4">
-  					<nav class="nav nav-tabs nav-justified nav-filter">
-  						<li><a class="active" href="#">Recomended</a></li>
-  						<li><a href="#">Hot</a></li>
-  						<li><a href="#">Subscriptions</a></li>
-  					</nav>
-  				</div>
-  			</div>
-  		</div>
-  	</nav>
+    <!-- Navbar
+        ================================================== -->
+    <nav class="navbar navbar-ep">
+      <div class="container-fluid">
+        <div class="top-line">
+          <div class="navbar-ep-content">
+            <div class="row">
+              <div class="col-md-5 col-sm-6 col-xs-7">
+                <div class="nav-group">
+                  <a href="#" class="nav-el menu-button menu-control">
+                    <i class="icon-ei-menu"></i>
+                  </a>
+                  <a href="#" class="nav-el logo">
+                    <img src="../img/logo.png" alt="">
+                  </a>
+                  <a href="#" class="nav-el add-button tooltip-hover" data-toggle="tooltip" data-placement="right" title="Add content">
+                    <i class="icon-ei-plus"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-5 col-md-push-4 col-lg-push-4">
+                <div class="nav-group">
+                  <div class="btn-group nav-el nav-el-right">
+                    <a href="#" data-toggle="dropdown">
+                      <img src="../img/ava.png" alt="">
+                    </a>
+                    <ul class="dropdown-menu arrow-top arrow-right noclose" role="menu">
+                      <li>
+                        <a class="d-m-line" href="#">
+                          <div class="icon">
+                            <img class="lg" src="../img/ava.png" alt="">
+                          </div>
+                          <div class="content">
+                            Zeniagromoff <br>
+                            <span class="strong">RegardelessFiles</span>
+                            <p class="annotation">
+                              Subscribers
+                            </p>
+                            <span class="strong">359</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="divider"></li>
+                      <li class="spoiler no-padding">
+                        <div class="spoiler-control">Switch channel
+                        <i class="pull-right icon-ei-chevron-right-sm"></i></div>
+                        <div class="spoiler-content">
+                          <ul>
+                            <li>
+                              <a href="#">Channel 1</a>
+                            </li>
+                            <li>
+                              <a href="#">Channel 1</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <a class="d-m-line sm" href="#">
+                          <div class="icon">
+                            <i class="icon-ei-star"></i>
+                          </div>
+                          <div class="content in-line">
+                            My interests
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="d-m-line sm" href="#">
+                          <div class="icon">
+                            <i class="icon-ei-table"></i>
+                          </div>
+                          <div class="content in-line">
+                            My Channels
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="d-m-line sm" href="#">
+                          <div class="icon">
+                            <i class="icon-ei-card"></i>
+                          </div>
+                          <div class="content in-line">
+                            Publisher Manager
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="btn btn-primary">Create channel</a>
+                      </li>
+                      <li>
+                        <a href="#">Bind Channel</a>
+                      </li>
+                      <li>
+                        <a href="#">Log Out</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn-group nav-el nav-el-right alert-pic">
+                    <a href="#" data-toggle="dropdown">
+                      <i class="icon-ei-bell"></i>
+                      <div class="badge badge-nav badge-primary">5</div>
+                    </a>
+                    <ul class="dropdown-menu arrow-top arrow-right" role="menu">
+                      <li>
+                        <a class="d-m-line" href="#">
+                          <div class="icon">
+                            <i class="icon-ei-up"></i>
+                          </div>
+                          <div class="content">
+                            <span class="strong">5 people</span> upvoted <br> your post.
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="d-m-line" href="#">
+                          <div class="icon">
+                            <img src="../img/ava.png" alt="">
+                          </div>
+                          <div class="content">
+                            <span class="strong">Some name</span><br>
+                            Replied to your post.
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="d-m-line" href="#">
+                          <div class="icon">
+                            <img src="../img/ava.png" alt="">
+                          </div>
+                          <div class="content">
+                            <span class="strong">Some name</span><br>
+                            Replied to your post.
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="d-m-line" href="#">
+                          <div class="icon">
+                            <img src="../img/ava.png" alt="">
+                          </div>
+                          <div class="content">
+                            <span class="strong">Some name</span><br>
+                            Replied to your post.
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="d-m-line" href="#">
+                          <div class="icon">
+                            <img src="../img/ava.png" alt="">
+                          </div>
+                          <div class="content">
+                            <span class="strong">Some name</span><br>
+                            Replied to your post.
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="javascript:void(0);" id="mobile-search" class="nav-el nav-el-right search-pic visible-sm visible-xs">
+                    <i class="icon-ei-search"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 hidden-xs hidden-sm col-sm-pull-4 col-md-pull-4 col-lg-pull-4">
+                <div class="input-group search-group">
+                  <span class="input-group-addon">
+                    <i class="icon-ei-search"></i>
+                  </span>
+                  <input type="text" class="form-control" placeholder="search">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-mobile-search">
+            <div class="input-group search-group">
+              <span class="input-group-addon">
+                <i class="icon-ei-search"></i>
+              </span>
+              <input class="form-control" placeholder="search" type="text">
+            </div>
+            <a href="#" class="close-mobile-search" id="close-search">
+              <i class="icon-ei-cross"></i>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4">
+            <nav class="nav nav-tabs nav-justified nav-filter">
+              <li><a class="active" href="#">Recomended</a></li>
+              <li><a href="#">Hot</a></li>
+              <li><a href="#">Subscriptions</a></li>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
       <!-- Buttons
       ================================================== -->
       <div class="container">
@@ -392,6 +521,7 @@
                       <div class="form-group">
                         <div class="drop-field">
                           <i class="icon-ei-star"></i>
+                          <h4>Drop file to upload</h4>
                         </div>
                       </div>
                       <div class="form-group">
