@@ -1,0 +1,71 @@
+.edit-collection-card {
+  background-color: @white;
+  border-radius: @border-radius-base;
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  .edit-collection-card-img {
+    overflow: hidden;
+    float: left;
+
+    img {
+      width: 400px;
+      height: auto;
+    }
+  }
+
+  .edit-collection-card-content {
+    padding: 16px;
+    float: left;
+    width: ~'calc(100% - 400px)';
+
+    .btn-edit {
+      margin-left: -16px;
+      position: absolute;
+      left: 100%;
+      top: -8px;
+
+      i:before {
+        color: @gray;
+        font-size: 16px;
+        line-height: 16px;
+      }
+    }
+
+    .collection-card-title {
+      position: relative;
+    }
+
+    .description {
+      position: relative;
+    }
+
+    .posts-number {
+      color: @gray;
+      display: inline-block;
+    }
+
+    .date {
+      color: @gray;
+      display: inline-block;
+    }
+
+    .number {
+      color: @gray-dark;
+      margin-left: 8px;
+      margin-right: 16px;
+    }
+
+    .btn-group {
+      display: block;
+
+      &::after {
+        content: '';
+        width: 0;
+        height: 0;
+        display: block;
+        clear: both;
+      }
+    }
+  }
+}

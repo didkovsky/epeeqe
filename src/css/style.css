@@ -9137,6 +9137,65 @@ yx-axis
   display: block;
   clear: both;
 }
+.edit-collection-card {
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.edit-collection-card .edit-collection-card-img {
+  overflow: hidden;
+  float: left;
+}
+.edit-collection-card .edit-collection-card-img img {
+  width: 400px;
+  height: auto;
+}
+.edit-collection-card .edit-collection-card-content {
+  padding: 16px;
+  float: left;
+  width: calc(100% - 400px);
+}
+.edit-collection-card .edit-collection-card-content .btn-edit {
+  margin-left: -16px;
+  position: absolute;
+  left: 100%;
+  top: -8px;
+}
+.edit-collection-card .edit-collection-card-content .btn-edit i:before {
+  color: #bababa;
+  font-size: 16px;
+  line-height: 16px;
+}
+.edit-collection-card .edit-collection-card-content .collection-card-title {
+  position: relative;
+}
+.edit-collection-card .edit-collection-card-content .description {
+  position: relative;
+}
+.edit-collection-card .edit-collection-card-content .posts-number {
+  color: #bababa;
+  display: inline-block;
+}
+.edit-collection-card .edit-collection-card-content .date {
+  color: #bababa;
+  display: inline-block;
+}
+.edit-collection-card .edit-collection-card-content .number {
+  color: #222;
+  margin-left: 8px;
+  margin-right: 16px;
+}
+.edit-collection-card .edit-collection-card-content .btn-group {
+  display: block;
+}
+.edit-collection-card .edit-collection-card-content .btn-group::after {
+  content: '';
+  width: 0;
+  height: 0;
+  display: block;
+  clear: both;
+}
 .comment-section .comment-section-header {
   padding-left: 16px;
 }
